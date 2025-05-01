@@ -1,17 +1,25 @@
-import React from 'react'
+import NavbarMobile from './NavbarMobile'
+import NavbarDesktop from './NavbarDesktop'
+
 
 const Navbar = () => {
   return (
-    <div>
-      <nav>
-
-        <div>
-            <h2>Usuario</h2>
-        </div>
-        
-      </nav>
-    </div>
+    <>
+      <div className='flex w-full md:hidden'>
+        <NavbarMobile />
+      </div>
+      <div className='hidden md:flex md:w-full'>
+        <NavbarDesktop />
+      </div>
+  </>
   )
 }
 
 export default Navbar
+
+
+
+
+
+          
+

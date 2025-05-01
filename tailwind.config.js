@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       colors:{
-        inicio:'#121212',
-        final:'#212b46'
+        fondoInicio:'#121212',
+        fondoFinal:'#212b46',
+        
       },
       fontFamily:{
-        poppins:'Poppins'
+        poppins:'Poppins',
+        exo:'Exo'
       }
     },
   },
