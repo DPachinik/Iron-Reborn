@@ -29,6 +29,7 @@ export default [
       prettier,
     },
     rules: {
+      'react/prop-types': 'off',
       'linebreak-style': 'off',
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,

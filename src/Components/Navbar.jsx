@@ -1,15 +1,16 @@
 import NavbarMobile from './NavbarMobile'
 import NavbarDesktop from './NavbarDesktop'
+import { navbarLinks } from '../Data/navbarLinks'
 
 
 const Navbar = () => {
   return (
     <>
       <div className='flex w-full md:hidden'>
-        <NavbarMobile />
+        <NavbarMobile navbarLinks={navbarLinks} />
       </div>
       <div className='hidden md:flex md:w-full'>
-        <NavbarDesktop />
+        <NavbarDesktop navbarLinks={navbarLinks} />
       </div>
   </>
   )

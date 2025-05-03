@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll'
 import { UserCircle } from 'phosphor-react'
 
 
-const Navbar = () => {
+const Navbar = ({navbarLinks}) => {
     return (
         
             <nav className='flex w-full'>        
@@ -17,72 +17,47 @@ const Navbar = () => {
 
                     </div>
 
-                    <ul className='flex gap-8 items-center text-white'>
+                    <div className='flex'>
 
-                        <li role='link section'>
-                            <ScrollLink
-                            to = 'Inicio'
-                            smooth = {true}
-                            duration = {500}
-                            spy = {true}
-                            activeClass='text-red-700'
-                            className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
-                            >
-                            Inicio
-                            </ScrollLink>
-                        </li>
+                        <ul className='flex gap-8 items-center text-white'>
 
-                        <li role='link section'>
-                            <ScrollLink
-                            to = ''
-                            smooth = {true}
-                            duration = {500}
-                            spy = {true}
-                            activeClass='text-red-700'
-                            className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
-                            >
-                            Sobre Nosotros
-                            </ScrollLink>
-                        </li>
+                            {navbarLinks.map((links, index)=>(
+                                <li 
+                                key={index}
+                                role='link section'>
+                                <ScrollLink
+                                to = {links.to}
+                                smooth = {true}
+                                duration = {500}
+                                spy = {true}
+                                activeClass='text-red-700'
+                                className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
+                                >
+                                {links.label}
+                                </ScrollLink>
+                            </li>
 
-                        <li role='link section'>
-                            <ScrollLink
-                            to = ''
-                            smooth = {true}
-                            duration = {500}
-                            spy = {true}
-                            activeClass='text-red-700'
-                            className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
-                            >
-                            Clases
-                            </ScrollLink>
-                        </li>
+                            ))}
+                        
+                        </ul>
 
-                        <li role='link section'>
-                            <ScrollLink
-                            to = ''
-                            smooth = {true}
-                            duration = {500}
-                            spy = {true}
-                            activeClass='text-red-700'
-                            className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
-                            >
-                            Contacto
-                            </ScrollLink>
-                        </li>
-
-                        <li role='link section'>
+                        <div
+                        className='ml-20'
+                        role='link section'>
 
                             <NavLink
                             to='/'
-                            className='flex items-center gap-1 ml-8'
+                            className='flex items-center gap-1  text-white'
                             >
-                            Login
-                            <UserCircle size={30} color='white'/>
+                                Login
+                                <UserCircle size={30} color='white'/>
                             </NavLink>
 
-                        </li>
-                    </ul>
+                        </div>
+
+                    </div>
+
+  
 
                 </div>
         
