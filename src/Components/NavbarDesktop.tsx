@@ -3,13 +3,21 @@ import { NavLink } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 import { UserCircle } from 'phosphor-react'
 
+type NavbarLinksType ={
+    label:string;
+    to:string;
+}
 
-const Navbar = ({navbarLinks}) => {
+type NavbarProps = {
+    navbarLinks: NavbarLinksType [];
+}
+
+const Navbar = ({navbarLinks}:NavbarProps) => {
     return (
         
             <nav className='flex w-full'>        
                 
-                <div className='flex w-full h-[70px]  items-center justify-between mx-auto px-8 py-2 font-exo bg-black z-20 '>
+                <div className='flex w-full h-[70px]  items-center justify-between mx-auto px-8 py-2 font-exo bg-[#3A3A3A] z-20 '>
 
                     <div className='text-white'>
 
@@ -31,7 +39,7 @@ const Navbar = ({navbarLinks}) => {
                                 duration = {500}
                                 spy = {true}
                                 activeClass='text-red-700'
-                                className='hover:text-red-700 hover:border-b hover:border-red-700 hover:cursor-pointer'
+                                className='hover:text-red-500 hover:border-b hover:border-red-500 hover:cursor-pointer'
                                 >
                                 {links.label}
                                 </ScrollLink>

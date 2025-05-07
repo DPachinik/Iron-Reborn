@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+import textShadow from 'tailwindcss-textshadow'
 export default {
   content: [
     "./index.html",
@@ -14,8 +16,14 @@ export default {
       fontFamily:{
         poppins:'Poppins',
         exo:'Exo'
-      }
+      },
+      textShadow: {
+        glow: '0 0 10px rgba(255, 255, 255, 0.8)',
+        glowRed: '0 0 10px rgba(255, 0, 0, 0.8)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    textShadow,
+  ],
 }

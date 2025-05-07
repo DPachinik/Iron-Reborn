@@ -3,7 +3,17 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
-const Navbar = ({ navbarLinks }) => {
+
+type NavbarLinksType ={
+  label:string;
+  to:string;
+}
+
+type NavbarProps = {
+  navbarLinks: NavbarLinksType [];
+}
+
+const Navbar = ({ navbarLinks }:NavbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuOpen() {
@@ -29,7 +39,7 @@ const Navbar = ({ navbarLinks }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="relative w-full">
+    <nav className="relative w-full z-20">
       <div className="flex h-[70px] items-center justify-between bg-black px-2 py-2 font-exo">
         <div className="">
           {menuOpen ? (

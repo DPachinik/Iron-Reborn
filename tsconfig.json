@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",                        // Nivel de JS que se va a generar
+    "module": "commonjs",                     // Tipo de módulo usado por Node.js
+    "outDir": "./dist",                       // Carpeta donde se generará el código JS
+    "rootDir": "./src",                       // Carpeta raíz del código fuente TS
+    "strict": true,                           // Activa las comprobaciones estrictas de tipos
+    "esModuleInterop": true,                  // Permite importar módulos CommonJS como si fueran ES6
+    "forceConsistentCasingInFileNames": true, // Evita errores por mayúsculas/minúsculas
+    "skipLibCheck": true,                     // Omite la comprobación de tipos en node_modules
+    "resolveJsonModule": true,                // Permite importar archivos .json
+    "moduleResolution": "node",               // Forma de resolver los módulos
+    "allowSyntheticDefaultImports": true,     // Permite importar default aunque el módulo no lo tenga
+    "isolatedModules": true,
+    "jsx": "react-jsx",             // Para proyectos con React 17+                   // Cada archivo es un módulo independiente
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
