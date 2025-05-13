@@ -1,6 +1,5 @@
-
 import { Route, Routes } from 'react-router-dom';
-import  Navbar  from './Components/Navbar'
+import Navbar from './Components/Navbar/Navbar';
 import Landing from './Pages/Landing';
 
 function App() {
@@ -8,10 +7,9 @@ function App() {
     <div className="h-full">
       <Navbar />
 
-        <Routes>
-          <Route path='/Landing' element= {<Landing />} />
-        </Routes>
-      
+      <Routes>
+        <Route path="/Landing" element={<Landing />} />
+      </Routes>
     </div>
   );
 }
