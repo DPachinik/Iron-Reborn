@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { descriptions } from '../../Data/descriptions';
+import ClosedButton from './ClosedButton';
 
 const Card = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -55,7 +56,7 @@ const Card = () => {
                 </p>
 
                 <button
-                  className={` ${index % 2 === 0 ? 'bg-red-700 text-black' : 'bg-[#1C1C1C] text-white'} mx-auto w-max px-4 py-1 font-exo font-bold`}
+                  className={` ${index % 2 === 0 ? 'bg-red-700 text-black duration-200 hover:bg-white' : 'bg-[#1C1C1C] text-white duration-200 hover:bg-red-700'} mx-auto w-max px-4 py-1 font-exo font-bold`}
                   onClick={() => handleclick(index)}
                 >
                   {element.button}
@@ -67,15 +68,18 @@ const Card = () => {
       </div>
 
       {openModal && selectedIndex !== null && (
-        <div
-          className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-[#4A4A4A] bg-opacity-80"
-          onClick={handleCloseClick}
-        >
+        <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-[#4A4A4A] bg-opacity-80">
           <article className="max-h container grid w-[90%] grid-cols-1 p-4 md:w-[70%] md:grid-cols-[400px_auto]">
-            <div className="z-10 flex h-[500px] w-[400px] flex-col justify-between bg-black p-4 text-center">
-              <h3 className="font-exo text-[6vh] font-bold text-red-700">
-                {descriptions[selectedIndex].title}
-              </h3>
+            <div className="z-10 flex min-h-[400px] flex-col justify-between bg-black p-4 text-center md:h-[500px] md:w-[400px]">
+              <div className="flex justify-between md:justify-center">
+                <h3 className="font-exo text-[6vh] font-bold text-red-700">
+                  {descriptions[selectedIndex].title}
+                </h3>
+
+                <div className="md:hidden">
+                  <ClosedButton handleCloseClick={handleCloseClick} />
+                </div>
+              </div>
 
               <p className="font-exo text-gray-400">
                 {descriptions[selectedIndex].fullDescription}
@@ -87,7 +91,11 @@ const Card = () => {
               </div>
             </div>
 
-            <div className="h-full w-full justify-center">
+            <div className="relative h-full w-full justify-center">
+              <div className="hidden md:flex">
+                <ClosedButton handleCloseClick={handleCloseClick} />
+              </div>
+
               <div className="relative">
                 <img
                   src={descriptions[selectedIndex].image}

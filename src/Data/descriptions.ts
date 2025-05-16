@@ -40,7 +40,7 @@ export const descriptions: DescriptionCard[] = [
     icon: Globe,
     title: 'Nuestro Lema',
     shortDescription: '¿Lo que buscamos?',
-    fullDescription: '" Salud y Fitness para una vida sin límites."',
+    fullDescription: '" Salud y Fitness para una vida sin límites"',
     button: 'SABER MÁS',
     image: boxeadorImage,
     alt: 'hombre boxeador',
