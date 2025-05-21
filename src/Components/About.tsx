@@ -3,6 +3,7 @@ import atleta from '../../public/body.jpg';
 import { Check, PhoneOutgoing } from 'phosphor-react';
 import Card from './Cards/Card';
 import { funciones } from '../Data/funciones';
+import Services from './Box/Services';
 
 const About = () => {
   return (
@@ -69,6 +70,8 @@ const About = () => {
       </div>
 
       <Card />
+
+      <Services />
     </section>
   );
 };
