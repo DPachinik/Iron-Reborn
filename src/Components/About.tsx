@@ -4,11 +4,12 @@ import { Check, PhoneOutgoing } from 'phosphor-react';
 import Card from './Cards/Card';
 import { funciones } from '../Data/funciones';
 import Services from './Box/Services';
+import Counter from './Counter';
 
 const About = () => {
   return (
     <section className="bg-[#1C1C1C] md:h-[100dvh]">
-      <div className="flex h-full px-4 py-4 md:px-0 md:py-0">
+      <div className="flex h-full flex-col px-4 py-4 md:px-0 md:py-0">
         <article className="px-auto grid h-full grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-0">
           <div className="flex flex-col space-y-4 text-white md:justify-around md:pl-4 md:pr-8">
             <p className="font-exo text-sm font-semibold text-red-600">
@@ -70,8 +71,8 @@ const About = () => {
       </div>
 
       <Card />
-
       <Services />
+      <Counter />
     </section>
   );
 };
