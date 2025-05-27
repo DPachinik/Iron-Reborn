@@ -8,7 +8,7 @@ import Counter from './Counter';
 
 const About = () => {
   return (
-    <section className="bg-[#1C1C1C] md:h-[100dvh]">
+    <section className="flex flex-col bg-[#1C1C1C]">
       <div className="flex h-full flex-col px-4 py-4 md:px-0 md:py-0">
         <article className="px-auto grid h-full grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-0">
           <div className="flex flex-col space-y-4 text-white md:justify-around md:pl-4 md:pr-8">
