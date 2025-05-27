@@ -24,7 +24,7 @@ const Card = () => {
   }, [openModal]);
 
   return (
-    <section className="relative bg-[#3A3A3A] py-12">
+    <div className="relative bg-[#3A3A3A] py-12">
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
         {descriptions.map((element, index) => {
           const Icon = element.icon;
@@ -107,7 +107,7 @@ const Card = () => {
           </article>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 
