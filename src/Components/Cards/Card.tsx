@@ -25,7 +25,7 @@ const Card = () => {
 
   return (
     <div className="relative bg-[#3A3A3A] py-12">
-      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 p-4 px-8 md:grid-cols-3">
         {descriptions.map((element, index) => {
           const Icon = element.icon;
           return (

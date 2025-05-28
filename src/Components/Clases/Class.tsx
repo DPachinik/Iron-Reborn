@@ -1,18 +1,19 @@
 import { TrendUp } from 'phosphor-react';
 import React from 'react';
 import BoxClases from './BoxClases';
+import VideoGym from '../VideoGym';
 
 const Class = () => {
   return (
     <section className="h-full bg-[#1C1C1C]">
       <div className="px-8 pt-8">
-        <article className="flex flex-col space-y-14">
+        <article className="flex flex-col space-y-4">
           <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2 md:gap-8">
             <div className="flex flex-col gap-4">
-              <h4 className="font-exo text-sm font-semibold text-red-600">
+              <p className="font-exo text-lg font-semibold text-red-600">
                 NUESTRAS CLASES
-              </h4>
-              <p className="text-[5vh] font-bold leading-10 text-white">
+              </p>
+              <p className="font-exo text-[5vh] font-bold leading-10 text-white">
                 Encuentra el Entrenamiento Perfecto para tus Objetivos
               </p>
             </div>
@@ -33,6 +34,7 @@ const Class = () => {
           </div>
 
           <BoxClases />
+          <VideoGym />
         </article>
       </div>
     </section>

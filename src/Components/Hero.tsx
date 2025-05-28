@@ -14,7 +14,7 @@ const Hero = () => {
               className="absolute inset-0 z-0 h-full w-full object-cover opacity-15"
             />
 
-            <div className="absolute left-1 z-10 flex h-full flex-col justify-between">
+            <div className="absolute left-4 z-10 flex h-full flex-col justify-between">
               <div className="flex flex-1 flex-col items-center justify-around font-exo text-[5vh] font-bold text-white opacity-80 text-shadow-glow">
                 <p className="rotate-90">I</p>
 
@@ -35,9 +35,9 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-col gap-2 lg:gap-4">
-                <div className="text-[5vh] font-bold text-gray-200 lg:text-6xl">
-                  <p>STRONGER </p>
-                  <p>EVERY DAY</p>
+                <div className="font-exo text-[5vh] font-bold text-gray-200 lg:text-6xl">
+                  <p>SALUD Y </p>
+                  <p>FITNESS</p>
                 </div>
 
                 <p className="text-gray-400">
@@ -61,7 +61,7 @@ const Hero = () => {
               className="absolute inset-0 h-full w-full object-cover"
             />
 
-            <div className="absolute left-1 z-10 flex h-full flex-col justify-between">
+            <div className="absolute left-4 z-10 flex h-full flex-col justify-between">
               <div className="flex flex-1 flex-col items-center justify-between font-exo text-[5vh] font-bold text-red-600 opacity-80 text-shadow-glowRed md:justify-around">
                 <p className="rotate-90">R</p>
 

@@ -10,13 +10,13 @@ const About = () => {
   return (
     <section className="flex flex-col bg-[#1C1C1C]">
       <div className="flex h-full flex-col px-4 py-4 md:px-0 md:py-0">
-        <article className="px-auto grid h-full grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-0">
-          <div className="flex flex-col space-y-4 text-white md:justify-around md:pl-4 md:pr-8">
-            <p className="font-exo text-sm font-semibold text-red-600">
+        <article className="grid h-full grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-0">
+          <div className="flex flex-col space-y-4 px-8 text-white md:justify-around">
+            <p className="pt-4 font-exo text-lg font-semibold text-red-600">
               ¿QUIENES SOMOS?
             </p>
 
-            <h2 className="text-[5vh] font-bold leading-10">
+            <h2 className="font-exo text-[5vh] font-bold leading-10">
               Tu Destino Definitivo de Fitness y Bienestar.
             </h2>
 
@@ -64,7 +64,7 @@ const About = () => {
             <img
               src={atleta}
               alt="Atleta"
-              className="inset-0 flex rounded-md object-cover object-left md:rounded-none"
+              className="inset-0 flex rounded-md object-cover object-center md:rounded-none"
             />
           </div>
         </article>
