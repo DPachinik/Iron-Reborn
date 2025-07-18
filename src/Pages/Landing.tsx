@@ -1,6 +1,6 @@
-import About from '../Components/About';
+import About from '../Section/About';
 import Class from '../Components/Clases/Class';
-import Hero from '../Components/Hero';
+import Hero from '../Section/Hero';
 
 const Landing = () => {
   return (

@@ -64,7 +64,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
 
         <div className="absolute inset-0 left-0 top-[70px] h-[500px]">
           <ul
-            className={`flex h-full flex-col items-center justify-around gap-8 py-8 text-red-700 ${menuOpen ? 'bg-gradient-to-b from-black via-gray-900 to-fondoFinal' : 'pointer-events-none hidden'}`}
+            className={`flex h-full flex-col items-center justify-around gap-8 py-8 text-[#ff2323] ${menuOpen ? 'bg-gradient-to-b from-black via-gray-900 to-fondoFinal' : 'pointer-events-none hidden'}`}
             role="menu"
           >
             {navbarLinks.map((links, index) => (
@@ -74,7 +74,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  className="w-full py-4 text-center duration-300 ease-in-out hover:bg-red-700 hover:text-white"
+                  className="w-full py-4 text-center duration-300 ease-in-out hover:bg-[#ff2323] hover:text-white"
                   onClick={handleItemClose}
                 >
                   {links.label}

@@ -1,4 +1,5 @@
 import React from 'react';
+import TituloCentral from '../TituloCentral/TituloCentral';
 
 const Horarios = () => {
   const baseBorder = 'border-4 border-[#1C1C1C]';
@@ -8,9 +9,7 @@ const Horarios = () => {
 
   return (
     <div className="w-full">
-      <h3 className="mb-6 text-center font-exo text-[4vh] font-semibold text-white">
-        Clases y Horarios
-      </h3>
+      <TituloCentral text="Clases y Horarios" />
       <div className="container mx-auto flex overflow-x-auto md:justify-center">
         <table
           className={`${baseBorder}text-xs min-w-[700px] bg-black font-medium text-gray-400 md:text-base`}

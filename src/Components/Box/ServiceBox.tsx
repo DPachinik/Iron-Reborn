@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Servicios } from '../../Data/Servicios';
-import WhatsAppButton from '../WhatsAppButton';
+import WhastAppButton from '../WhastAppButton/WhastAppButton';
+import { ArrowBendLeftUp } from 'phosphor-react';
 
 const ServiceBox = () => {
   const [openText, setOpenText] = useState(
@@ -68,11 +69,17 @@ const ServiceBox = () => {
                         className="h-[100px] w-[100px] rounded-full"
                       />
 
-                      <p className="text-sm">{items.fullText}</p>
+                      <p className="text-xs">{items.fullText}</p>
                     </div>
 
                     <div className="flex justify-around py-4 md:pb-4">
-                      <WhatsAppButton />
+                      <WhastAppButton
+                        url="https://www.whatsapp.com/?lang=es"
+                        className="bg-[#1C1C1C] hover:bg-green-600"
+                      >
+                        <ArrowBendLeftUp />
+                        Agendar Consulta
+                      </WhastAppButton>
 
                       <button onClick={() => handleReturnClick(index)}>
                         <Icon2

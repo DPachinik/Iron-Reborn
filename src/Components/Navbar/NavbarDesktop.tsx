@@ -29,7 +29,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
                   duration={500}
                   spy={true}
                   activeClass="text-red-700"
-                  className="hover:cursor-pointer hover:border-b hover:border-red-500 hover:text-red-500"
+                  className="hover:cursor-pointer hover:border-b hover:border-[#ff2323] hover:text-[#ff2323]"
                 >
                   {links.label}
                 </ScrollLink>

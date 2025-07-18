@@ -18,8 +18,8 @@ export default {
         exo:'Exo'
       },
       textShadow: {
-        glow: '0 0 10px rgba(255, 255, 255, 0.8)',
-        glowRed: '0 0 10px rgba(255, 0, 0, 0.8)',
+        glow: '0 0 15px rgba(255, 255, 255, 0.8)',
+        glowRed: '0 0 15px rgba(255, 0, 0, 0.9)',
       },
       backgroundImage:{
         nutriologa:"url('nutriologa.jpg')",
@@ -46,7 +46,17 @@ export default {
         },
         ".clip-tl-br-45": {
         clipPath: "polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)",
-      },
+        },
+        ".clip-tr-bl-45": {
+          clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%)",
+        },
+        ".clip-left-edges": {
+        clipPath: "polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 90%, 0 10%)"
+        },
+        ".clip-right-edges": {
+        clipPath: "polygon(0 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 0 100%)"
+        }
+      
       });
     },
     textShadow,
