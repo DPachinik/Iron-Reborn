@@ -23,6 +23,7 @@ export default {
       },
       backgroundImage:{
         nutriologa:"url('nutriologa.jpg')",
+        radial: 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },
@@ -50,12 +51,13 @@ export default {
         ".clip-tr-bl-45": {
           clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%)",
         },
-        ".clip-left-edges": {
-        clipPath: "polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 90%, 0 10%)"
+        ".clip-diagonal-izquierdo":{
+        clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)"
         },
-        ".clip-right-edges": {
-        clipPath: "polygon(0 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 0 100%)"
-        }
+        ".clip-diagonal-derecho":{
+        clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)"
+        },
+
       
       });
     },
