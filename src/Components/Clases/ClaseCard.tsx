@@ -17,7 +17,7 @@ const ClaseCard = ({ items }: Props) => {
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-2 bg-black/60">
-            <div className="text-red-600">
+            <div className="text-[#ff2323]">
               <Icon size={48} />
             </div>
             <h4 className="font-exo text-lg font-semibold text-white">

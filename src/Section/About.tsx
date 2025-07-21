@@ -27,7 +27,7 @@ const About = () => {
             </p>
 
             <div className="space-y-4 py-4">
-              <p className="text-md font-semibold text-red-600">
+              <p className="text-md font-semibold text-[#ff2323]">
                 Nos Enfocamos en:
               </p>
 
@@ -39,7 +39,7 @@ const About = () => {
                   >
                     <Check
                       size={16}
-                      className="rounded-full bg-red-600 text-center text-black"
+                      className="rounded-full bg-[#ff2323] text-center text-black"
                     />
                     {items}
                   </li>
@@ -50,11 +50,13 @@ const About = () => {
             <div className="flex items-center gap-4 pb-4">
               <PhoneOutgoing
                 size={48}
-                className="flex-shrink-0 bg-red-600 p-2"
+                className="flex-shrink-0 bg-[#ff2323] p-2"
               />
               <div>
                 <p className="text-xs">SOPORTE AL CLIENTE</p>
-                <p className="font-exo text-sm text-red-500">+595 0982101391</p>
+                <p className="font-exo text-sm text-[#ff2323]">
+                  +595 0982101391
+                </p>
               </div>
             </div>
           </div>

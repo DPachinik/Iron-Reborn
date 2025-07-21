@@ -35,11 +35,11 @@ const Card = () => {
             >
               <article className="flex h-full w-full flex-col justify-around text-center">
                 <div
-                  className={` ${index % 2 === 1 ? 'bg-black' : 'bg-red-700'} mx-auto mt-4 flex justify-center p-3`}
+                  className={` ${index % 2 === 1 ? 'bg-black' : 'bg-[#ff2323]'} mx-auto mt-4 flex justify-center p-3`}
                 >
                   <Icon
                     size={48}
-                    className={` ${index % 2 === 0 ? 'text-black' : 'text-red-700'}`}
+                    className={` ${index % 2 === 0 ? 'text-black' : 'text-[#ff2323]'}`}
                   />
                 </div>
 
@@ -56,7 +56,7 @@ const Card = () => {
                 </p>
 
                 <button
-                  className={` ${index % 2 === 0 ? 'bg-red-700 text-black duration-200 hover:bg-white' : 'bg-[#1C1C1C] text-white duration-200 hover:bg-red-700'} mx-auto w-max px-4 py-1 font-exo font-bold`}
+                  className={` ${index % 2 === 0 ? 'bg-[#ff2323] text-black duration-200 hover:bg-white' : 'bg-[#1C1C1C] text-white duration-200 hover:bg-[#ff2323]'} mx-auto w-max px-4 py-1 font-exo font-bold`}
                   onClick={() => handleclick(index)}
                 >
                   {element.button}
@@ -72,7 +72,7 @@ const Card = () => {
           <article className="max-h container grid w-[90%] grid-cols-1 p-4 md:w-[70%] md:grid-cols-[400px_auto]">
             <div className="z-10 flex min-h-[400px] flex-col justify-between bg-black p-4 text-center md:h-[500px] md:w-[400px]">
               <div className="flex justify-between md:justify-center">
-                <h3 className="font-exo text-[6vh] font-bold text-red-700">
+                <h3 className="font-exo text-[6vh] font-bold text-[#ff2323]">
                   {descriptions[selectedIndex].title}
                 </h3>
 
@@ -87,7 +87,7 @@ const Card = () => {
 
               <div className="flex justify-center gap-2 font-exo font-semibold">
                 <p className="text-white">IRON </p>
-                <p className="text-red-700">REBORN</p>
+                <p className="text-[#ff2323]">REBORN</p>
               </div>
             </div>
 

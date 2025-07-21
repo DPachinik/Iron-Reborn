@@ -31,7 +31,7 @@ const Counter = () => {
       )}
       {inView && (
         <div className="flex flex-col gap-3 text-center text-2xl font-bold text-white md:text-[7vh]">
-          <CountUp end={1000} duration={2} separator="," prefix="+" />
+          <CountUp end={1000} duration={2} separator="." prefix="+" />
           <p className="font-exo text-sm font-normal md:text-lg">
             Productos vendidos
           </p>

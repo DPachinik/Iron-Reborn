@@ -28,7 +28,7 @@ const ServiceBox = () => {
           return (
             <div
               key={index}
-              className="px-auto relative mx-4 flex min-h-[170px] w-full max-w-[800px] flex-col clip-tl-br-45 md:h-[200px]"
+              className="px-auto relative mx-4 flex min-h-[170px] w-full max-w-[700px] flex-col clip-tl-br-45 md:h-[150px]"
             >
               {!openText[index] ? (
                 <>
@@ -57,7 +57,7 @@ const ServiceBox = () => {
                 </>
               ) : (
                 <>
-                  <article className="flex flex-col justify-around bg-gradient-to-b from-red-800 via-red-600 to-red-800 px-2">
+                  <article className="flex flex-col justify-between bg-gradient-to-b from-red-800 via-red-600 to-red-800 px-2">
                     <h4 className="py-2 text-center font-bold">
                       {items.title}
                     </h4>
@@ -66,18 +66,18 @@ const ServiceBox = () => {
                       <img
                         src={items.image2}
                         alt="profesional del área"
-                        className="h-[100px] w-[100px] rounded-full"
+                        className="h-[80px] w-[80px] rounded-full"
                       />
 
-                      <p className="text-xs">{items.fullText}</p>
+                      <p className="text-xs md:text-sm">{items.fullText}</p>
                     </div>
 
-                    <div className="flex justify-around py-4 md:pb-4">
+                    <div className="flex items-center justify-around py-4 text-sm">
                       <WhastAppButton
                         url="https://www.whatsapp.com/?lang=es"
                         className="bg-[#1C1C1C] hover:bg-green-600"
                       >
-                        <ArrowBendLeftUp />
+                        <ArrowBendLeftUp size={22} />
                         Agendar Consulta
                       </WhastAppButton>
 

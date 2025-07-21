@@ -1,3 +1,4 @@
+import { CaretRight } from 'phosphor-react';
 import React from 'react';
 
 type SubtituloProps = {
@@ -6,7 +7,14 @@ type SubtituloProps = {
 
 const Subtitulo = ({ text }: SubtituloProps) => {
   return (
-    <p className="pt-4 font-exo text-lg font-semibold text-red-600">{text}</p>
+    <div className="mt-4 flex w-fit gap-2">
+      <div className="flex">
+        <CaretRight size={24} className="text-[#ff2323]" />
+        <CaretRight size={24} className="-ml-4 text-[#ffff]" />
+      </div>
+
+      <p className="font-exo text-lg font-semibold text-[#ff2323]">{text}</p>
+    </div>
   );
 };
 

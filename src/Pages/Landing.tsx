@@ -1,5 +1,5 @@
 import About from '../Section/About';
-import Class from '../Components/Clases/Class';
+import Class from '../Section/Class';
 import Hero from '../Section/Hero';
 
 const Landing = () => {
