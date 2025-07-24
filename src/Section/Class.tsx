@@ -7,6 +7,7 @@ import Horarios from '../Components/Horarios/Horarios';
 import Subtitulo from '../Components/Subtitulos/Subtitulo';
 import Pack from '../Components/Pack/Pack';
 import Texto from '../Components/Pack/Texto';
+import Testimonios from '../Components/Testimonios/Testimonios';
 
 const Class = () => {
   return (
@@ -42,6 +43,7 @@ const Class = () => {
           <Horarios />
           <Texto />
           <Pack />
+          <Testimonios />
         </article>
       </div>
     </section>
