@@ -24,14 +24,14 @@ const Card = () => {
   }, [openModal]);
 
   return (
-    <div className="relative bg-[#3A3A3A] py-12">
-      <div className="grid grid-cols-1 gap-4 p-4 px-8 md:grid-cols-3">
+    <div className="container relative mx-auto mb-14 mt-6 flex w-full">
+      <div className="flex w-full flex-col items-center justify-around gap-8 md:flex-row">
         {descriptions.map((element, index) => {
           const Icon = element.icon;
           return (
             <div
               key={index}
-              className={` ${index % 2 === 0 ? 'bg-[#1C1C1C]' : 'bg-gray-400'} h-[300px] w-full`}
+              className={` ${index % 2 === 0 ? 'bg-black' : 'bg-gray-400'} h-[300px] w-[300px] clip-diagonal-menor`}
             >
               <article className="flex h-full w-full flex-col justify-around text-center">
                 <div
@@ -56,7 +56,7 @@ const Card = () => {
                 </p>
 
                 <button
-                  className={` ${index % 2 === 0 ? 'bg-[#ff2323] text-black duration-200 hover:bg-white' : 'bg-[#1C1C1C] text-white duration-200 hover:bg-[#ff2323]'} mx-auto w-max px-4 py-1 font-exo font-bold`}
+                  className={` ${index % 2 === 0 ? 'bg-[#ff2323] text-black duration-200 hover:bg-white' : 'bg-black text-white duration-200 hover:bg-[#ff2323]'} mx-auto w-max px-4 py-1 font-exo font-bold`}
                   onClick={() => handleclick(index)}
                 >
                   {element.button}
@@ -70,9 +70,9 @@ const Card = () => {
       {openModal && selectedIndex !== null && (
         <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-[#4A4A4A] bg-opacity-80">
           <article className="max-h container grid w-[90%] grid-cols-1 p-4 md:w-[70%] md:grid-cols-[400px_auto]">
-            <div className="z-10 flex min-h-[400px] flex-col justify-between bg-black p-4 text-center md:h-[500px] md:w-[400px]">
-              <div className="flex justify-between md:justify-center">
-                <h3 className="font-exo text-[6vh] font-bold text-[#ff2323]">
+            <div className="z-10 flex h-auto min-h-[200px] flex-col justify-between rounded-xl bg-black p-8 text-center md:w-[400px]">
+              <div className="flex w-full justify-center">
+                <h3 className="flex font-exo text-xl font-bold text-[#ff2323] md:text-2xl">
                   {descriptions[selectedIndex].title}
                 </h3>
 
@@ -81,9 +81,14 @@ const Card = () => {
                 </div>
               </div>
 
-              <p className="font-exo text-gray-400">
-                {descriptions[selectedIndex].fullDescription}
-              </p>
+              <div className="my-2 flex flex-col gap-4 text-start font-exo text-sm text-gray-400">
+                <p className={`${selectedIndex == 2 && 'text-center text-lg'}`}>
+                  {descriptions[selectedIndex].parrafo1}
+                </p>
+                <p>{descriptions[selectedIndex].parrafo2}</p>
+                <p>{descriptions[selectedIndex].parrafo3}</p>
+                <p>{descriptions[selectedIndex].parrafo4}</p>
+              </div>
 
               <div className="flex justify-center gap-2 font-exo font-semibold">
                 <p className="text-white">IRON </p>
@@ -96,11 +101,11 @@ const Card = () => {
                 <ClosedButton handleCloseClick={handleCloseClick} />
               </div>
 
-              <div className="relative">
+              <div className="flex h-full items-center justify-center">
                 <img
                   src={descriptions[selectedIndex].image}
                   alt={descriptions[selectedIndex].alt}
-                  className="absolute inset-0 hidden h-[550px] object-cover object-center md:flex"
+                  className="hidden h-[90%] object-cover object-center md:flex"
                 />
               </div>
             </div>

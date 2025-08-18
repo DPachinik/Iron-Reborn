@@ -10,7 +10,7 @@ const Testimonios = () => {
         </p>
         <p className="pr-4 text-gray-400">
           Conocé cómo nuestros alumnos están logrando sus objetivos, paso a
-          paso, con nuestro acompañamiento
+          paso, con nuestro acompañamiento.
         </p>
       </div>
       <article className="scroll-style container mx-auto max-h-[400px] select-none space-y-6 overflow-y-auto rounded-xl px-4">

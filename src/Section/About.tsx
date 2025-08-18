@@ -1,78 +1,23 @@
 import React from 'react';
-import atleta from '../../public/body.jpg';
-import { Check, PhoneOutgoing } from 'phosphor-react';
 import Card from '../Components/Cards/Card';
-import { funciones } from '../Data/funciones';
-import Services from '../Components/Box/Services';
+
+import Services from '../Components/BoxServices/Services';
 import Counter from '../Components/Contador/Counter';
-import Subtitulo from '../Components/Subtitulos/Subtitulo';
+import Header from '../Components/HeaderAbout/Header';
 
 const About = () => {
   return (
-    <section className="flex flex-col bg-[#1C1C1C]">
-      <div className="flex h-full flex-col px-4 py-4 md:px-0 md:py-0">
-        <article className="grid h-full grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-0">
-          <div className="flex flex-col space-y-4 px-8 text-white md:justify-around">
-            <Subtitulo text="¿QUIENES SOMOS?" />
-
-            <h2 className="font-exo text-[5vh] font-bold leading-10">
-              Tu Destino Definitivo de Fitness y Bienestar.
-            </h2>
-
-            <p className="text-gray-400">
-              Somos un gimnasio comprometido con el entrenamiento serio y
-              resultados reales. Contamos con equipamiento de alta calidad,
-              entrenadores profesionales y un ambiente enfocado en el progreso
-              personal.
-            </p>
-
-            <div className="space-y-4 py-4">
-              <p className="text-md font-semibold text-[#ff2323]">
-                Nos Enfocamos en:
-              </p>
-
-              <ul className="space-y-1 border-y-[1px] border-gray-600 py-2">
-                {funciones.map((items, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-2 text-gray-400"
-                  >
-                    <Check
-                      size={16}
-                      className="rounded-full bg-[#ff2323] text-center text-black"
-                    />
-                    {items}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="flex items-center gap-4 pb-4">
-              <PhoneOutgoing
-                size={48}
-                className="flex-shrink-0 bg-[#ff2323] p-2"
-              />
-              <div>
-                <p className="text-xs">SOPORTE AL CLIENTE</p>
-                <p className="font-exo text-sm text-[#ff2323]">
-                  +595 0982101391
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative flex h-full w-full">
-            <img
-              src={atleta}
-              alt="Atleta"
-              className="inset-0 flex rounded-md object-cover object-center md:rounded-none"
-            />
-          </div>
-        </article>
+    <section className="flex flex-col">
+      <div className="bg-[#1C1C1C]">
+        <Header />
       </div>
 
-      <Card />
-      <Services />
+      <div className="bg-[#1C1C1C]">
+        <Card />
+      </div>
+      <div className="bg-[#3A3A3A]">
+        <Services />
+      </div>
       <Counter />
     </section>
   );

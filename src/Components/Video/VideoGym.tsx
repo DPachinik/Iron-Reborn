@@ -9,20 +9,26 @@ const VideoGym = () => {
   });
 
   return (
-    <div className="relative">
+    <div className="mx-20">
       <div>
         <TituloCentral text="Centro de Entrenamiento" />
       </div>
-      <div
-        ref={ref}
-        className="mx-auto min-h-[200px] w-full max-w-4xl overflow-hidden rounded-xl shadow-lg"
-      >
-        {inView && (
-          <video controls loop className="h-auto w-full rounded-xl">
-            <source src="/gym-video.mp4" type="video/mp4" />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        )}
+      <div className="relative border-[2px] py-8 [border-image:linear-gradient(to_top_left,#FF2323_0%,#1C1C1C_30%,#1C1C1C_70%,#FF2323)_1]">
+        <div
+          ref={ref}
+          className="mx-auto min-h-[200px] w-full max-w-4xl overflow-hidden rounded-xl"
+        >
+          {inView && (
+            <video
+              controls
+              loop
+              className="h-auto w-full rounded-xl bg-transparent md:h-[400px]"
+            >
+              <source src="/gym-video.mp4" type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </video>
+          )}
+        </div>
       </div>
     </div>
   );
