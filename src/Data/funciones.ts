@@ -5,6 +5,6 @@ export const funciones = [
   'Entrenamiento funcional',
   'Aumento de fuerza',
   'Mejora del rendimiento deportivo',
-  'Rehabilitación y prevención de lesiones',
+  'Rehabilitación de lesiones',
   'Acondicionamiento físico general',
 ];
