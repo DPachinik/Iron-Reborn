@@ -9,14 +9,14 @@ const VideoGym = () => {
   });
 
   return (
-    <div className="mx-20">
+    <div className="lg:mx-20">
       <div>
         <TituloCentral text="Centro de Entrenamiento" />
       </div>
       <div className="relative border-[2px] py-8 [border-image:linear-gradient(to_top_left,#FF2323_0%,#1C1C1C_30%,#1C1C1C_70%,#FF2323)_1]">
         <div
           ref={ref}
-          className="mx-auto min-h-[200px] w-full max-w-4xl overflow-hidden rounded-xl"
+          className="mx-auto w-full max-w-4xl overflow-hidden rounded-xl"
         >
           {inView && (
             <video

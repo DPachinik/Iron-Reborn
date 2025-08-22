@@ -6,7 +6,7 @@ import DiagonalCarousel from '../DiagonalCarousel/DiagonalCarousel';
 const HeaderClass = () => {
   return (
     <div className="grid grid-cols-1 items-start gap-4 md:gap-8 lg:grid-cols-2 lg:gap-16">
-      <div className="mt-12 flex flex-col gap-4">
+      <div className="mt-12 flex flex-col gap-4 md:mt-0">
         <Subtitulo text="NUESTRAS CLASES" />
         <p className="font-exo text-[5vh] font-bold leading-10 text-white">
           Encuentra el Entrenamiento Perfecto para tus Objetivos
@@ -23,7 +23,7 @@ const HeaderClass = () => {
         </div>
       </div>
 
-      <div className="flex h-full w-full flex-col items-center justify-center bg-arco bg-contain bg-no-repeat">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-arco bg-contain bg-center bg-no-repeat pt-8 md:pl-4 lg:items-end">
         <DiagonalCarousel />
       </div>
     </div>

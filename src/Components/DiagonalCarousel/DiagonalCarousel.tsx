@@ -17,7 +17,7 @@ const DiagonalCarousel = () => {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <div className="relative mt-12 overflow-x-hidden">
+    <div className="relative overflow-x-hidden pr-4">
       <div
         ref={emblaRef}
         className="h-[400px] w-auto max-w-[350px] overflow-hidden md:h-[380px] md:w-[650px] lg:w-full"
