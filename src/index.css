@@ -2,14 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* estilos para scrollbars personalizados */
-.scroll-style::-webkit-scrollbar {
-  width: 6px;
+
+.fondo{
+  background: radial-gradient(circle at 50% 24%, #ff2323 -10%, transparent 10%);
+  background-repeat: no-repeat;
+  
 }
-.scroll-style::-webkit-scrollbar-track {
-  background: transparent;
+@media (min-width:768px){
+  .fondo{
+      background: radial-gradient(circle at 51% 15%, #ff2323 -5%, transparent 7%),
+                  radial-gradient(circle at 140% 60%, #ff2323 0%, transparent 10%);
+      background-repeat: no-repeat;
+
+  }
 }
-.scroll-style::-webkit-scrollbar-thumb {
-  background-color: #525252;
-  border-radius: 10px;
+@media (min-width:1024px){
+  .fondo{
+      background: radial-gradient(circle at 78% 7%, #ff2323 -5%, transparent 7%),
+                  radial-gradient(circle at 140% 60%, #ff2323 0%, transparent 10%);
+      background-repeat: no-repeat;
+
+  }
+}
+
+.card-red{
+  background: radial-gradient(circle at bottom, #ff2323 -60%, #1c1c1c 110% );
+}
+.card-gray {
+  background: radial-gradient(circle at bottom, #6b7280 -60%, #1c1c1c 110%);
+}
+
+.animate-scroll{
+ animation-name: animate-scroll;
+ animation-duration: var(--duration,20s);
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+@keyframes animate-scroll{
+ 0%{
+  transform: translateX(0%);
+ }
+
+ 100%{
+  transform: translateX(-50%);
+ }
+}
+
+.animate-scroll-center{
+ animation-name: animate-scroll-center;
+ animation-duration: var(--duration,20s);
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+@keyframes animate-scroll-center{
+ 0%{
+  transform: translateX(-50%);
+ }
+
+ 100%{
+  transform: translateX(0%);
+ }
 }
