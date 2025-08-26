@@ -2,15 +2,15 @@ import React from 'react';
 import Subtitulo from '../../Components/Subtitulos/Subtitulo';
 import { TrendUp } from 'phosphor-react';
 import DiagonalCarousel from '../DiagonalCarousel/DiagonalCarousel';
+import TextoEncabezado from '../TextoEncabezado/TextoEncabezado';
 
 const HeaderClass = () => {
   return (
     <div className="grid grid-cols-1 items-start gap-4 md:gap-8 lg:grid-cols-2 lg:gap-16">
       <div className="mt-12 flex flex-col gap-4 md:mt-0">
         <Subtitulo text="NUESTRAS CLASES" />
-        <p className="font-exo text-[5vh] font-bold leading-10 text-white">
-          Encuentra el Entrenamiento Perfecto para tus Objetivos
-        </p>
+        <TextoEncabezado text="Encuentra el Entrenamiento Perfecto para tus Objetivos" />
+
         <p className="text-gray-400">
           Sumérgete en una experiencia dinámica de fitness con clases semanales
           que combinan ejercicios grupales, entrenamiento aeróbico y sesiones de

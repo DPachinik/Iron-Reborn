@@ -30,7 +30,7 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-col gap-2 lg:gap-4">
-                <div className="font-exo text-2xl font-bold text-gray-200 md:text-6xl">
+                <div className="lg:5xl flex gap-2 font-exo text-2xl font-bold text-gray-200 md:block md:gap-0 md:text-4xl">
                   <p>SALUD Y </p>
                   <p>FITNESS</p>
                 </div>

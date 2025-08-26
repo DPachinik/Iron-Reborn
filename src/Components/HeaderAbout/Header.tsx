@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, PhoneOutgoing } from 'phosphor-react';
 import { funciones } from '../../Data/funciones';
 import Subtitulo from '../../Components/Subtitulos/Subtitulo';
+import TextoEncabezado from '../TextoEncabezado/TextoEncabezado';
 
 const Header = () => {
   return (
@@ -10,9 +11,7 @@ const Header = () => {
         <div className="flex flex-col space-y-2 px-4 text-[14px] text-white md:justify-around">
           <Subtitulo text="¿QUIENES SOMOS?" />
 
-          <h2 className="font-exo text-2xl font-bold leading-10 md:text-4xl">
-            Tu Destino Definitivo de Fitness y Bienestar.
-          </h2>
+          <TextoEncabezado text="Tu Destino Definitivo de Fitness y Bienestar" />
 
           <p className="text-sm text-gray-400 md:text-base">
             Somos un gimnasio comprometido con el entrenamiento serio y

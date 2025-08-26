@@ -22,31 +22,33 @@ const Pack = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      <PackHeader />
+    <div className="grid grid-cols-1 md:h-dvh md:grid-cols-2">
+      <div className="flex items-start">
+        <PackHeader />
+      </div>
 
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto flex flex-col md:items-end md:justify-end lg:pr-32">
         <div className="my-4 flex justify-end gap-2 px-4">
           <ArrowLeft
             size={26}
             onClick={scrollPrev}
-            className="flex-shrink-0 rounded-full bg-white p-1 hover:cursor-pointer"
+            className="flex-shrink-0 rounded-full bg-white p-1 transition-all duration-150 hover:cursor-pointer hover:bg-red-600 hover:text-white"
           />
           <ArrowRight
             size={26}
             onClick={scrollNext}
-            className="flex-shrink-0 rounded-full bg-white p-1 hover:cursor-pointer"
+            className="flex-shrink-0 rounded-full bg-white p-1 transition-all duration-150 hover:cursor-pointer hover:bg-red-600 hover:text-white"
           />
         </div>
 
-        <div ref={emblaRef} className="my-4 overflow-hidden">
+        <div ref={emblaRef} className="my-4 max-w-[600px] overflow-hidden">
           <div className="flex px-4">
             {paquetes.map((element, i) => (
               <div
                 key={i}
-                className={`mx-3 h-[350px] min-w-0 flex-[0_0_100%] md:flex-[0_0_calc(100%/2)] ${i % 2 === 0 ? 'bg-radial from-red-600 via-red-800 to-black' : 'bg-radial from-[#4444] via-[#1C1C1C] to-black'} max-w-[250px] rounded-xl`}
+                className={`mx-3 h-[350px] min-w-0 flex-[0_0_100%] shadow-md shadow-black md:flex-[0_0_calc(100%/2)] ${i % 2 === 0 ? 'card-red text-white' : 'card-gray text-white'} m-2 max-w-[250px] rounded-xl hover:cursor-grab`}
               >
-                <article className="flex h-full select-none flex-col justify-between p-3 text-white">
+                <article className="flex h-full select-none flex-col justify-between p-3">
                   <div>
                     <h3 className="mb-4 text-center font-exo text-2xl font-semibold">
                       {element.plan}
@@ -56,7 +58,7 @@ const Pack = () => {
                       <p className="text-sm">{element.cuota}</p>
                     </div>
 
-                    <p className="my-3 w-full border-b-[1px] px-2 text-sm font-semibold">
+                    <p className="my-3 w-full border-b-[1px] px-2 pb-1 text-sm font-semibold">
                       {element.subtitulo}
                     </p>
                   </div>
@@ -78,7 +80,7 @@ const Pack = () => {
                   <div className="flex h-full w-full items-end justify-center">
                     <WhastAppButton
                       url="#"
-                      className={`flex items-center justify-center py-1 font-exo text-sm font-normal duration-200 hover:scale-110 ${i % 2 == 0 ? 'bg-[#ff2323] hover:bg-red-800' : 'bg-black hover:bg-[#4444]'}`}
+                      className={`flex items-center justify-center py-1 font-exo text-sm font-normal duration-200 hover:scale-110 ${i % 2 == 0 ? 'bg-[#ff2323]' : 'bg-black'}`}
                     >
                       <p>comprar ahora</p>
                       <ArrowUpRight size={16} />

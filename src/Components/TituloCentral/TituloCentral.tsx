@@ -6,9 +6,9 @@ type TituloProps = {
 
 const TituloCentral = ({ text }: TituloProps) => {
   return (
-    <h3 className="my-10 text-center font-exo text-[5vh] font-bold leading-10 text-white lg:text-3xl">
+    <h4 className="my-10 text-center font-exo text-2xl font-bold leading-10 text-white md:text-4xl">
       {text}
-    </h3>
+    </h4>
   );
 };
 

@@ -6,11 +6,10 @@ const Form = () => {
   const [message, setMessage] = useState('');
 
   const InputStyle =
-    'w-auto  h-[30px] md:w-[400px] rounded-sm border-[1px] border-[#3A3A3A] bg-[#2C2C2C] outline-none pl-2 text-[#3A3A3A]';
+    'w-auto  h-[30px] md:w-[400px] border-[1px] border-[#3A3A3A] bg-[#2C2C2C] outline-none pl-2 text-[#3A3A3A]';
 
   return (
-    <div className="container mx-auto grid grid-cols-2 items-center rounded-lg bg-[#3A3A3A]/90">
-      <img src="/victoria.png" className="h-auto w-auto" />
+    <div className="grid grid-cols-2 items-center py-12">
       <form className=" ">
         <div className="flex flex-col items-center gap-4">
           <input

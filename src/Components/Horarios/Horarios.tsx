@@ -8,7 +8,7 @@ const Horarios = () => {
   const classCellStyle = `${baseBorder} font-normal px-2`;
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full flex-col md:h-dvh">
       <TituloCentral text="Clases y Horarios" />
       <div className="container mx-auto flex overflow-x-auto md:justify-center">
         <table

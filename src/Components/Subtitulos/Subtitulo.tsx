@@ -12,8 +12,7 @@ const Subtitulo = ({ text }: SubtituloProps) => {
         <CaretRight size={24} className="text-[#ff2323]" />
         <CaretRight size={24} className="-ml-4 text-[#ffff]" />
       </div>
-
-      <p className="font-exo text-lg font-semibold text-[#ff2323]">{text}</p>
+      <h2 className="font-exo text-lg font-semibold text-[#ff2323]">{text}</h2>
     </div>
   );
 };

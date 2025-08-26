@@ -3,7 +3,7 @@ import Form from '../Components/Form/Form';
 
 const Contact = () => {
   return (
-    <div className="bg-mosaico bg-contain py-12">
+    <div className="bg-[#2E2E2E]">
       <Form />
     </div>
   );
