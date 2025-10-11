@@ -3,10 +3,11 @@ import fondoMosaico from '../../public/mosaico.png';
 import torso from '/torso.png';
 import WhastAppButton from '../Components/WhastAppButton/WhastAppButton';
 import LetrasRotadas from '../Components/LetrasRotadas/LetrasRotadas';
+import { Element } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100dvh-70px)]">
+    <Element name="inicio" className="h-[100dvh] pt-[70px]">
       <div className="h-full w-full">
         <article className="grid h-full w-full grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
           <div className="relative h-full w-full bg-black/90">
@@ -79,7 +80,7 @@ const Hero = () => {
           </div>
         </article>
       </div>
-    </section>
+    </Element>
   );
 };
 

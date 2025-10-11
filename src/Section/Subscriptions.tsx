@@ -3,10 +3,14 @@ import React from 'react';
 import Pack from '../Components/Pack/Pack';
 import Testimonios from '../Components/Testimonios/Testimonios';
 import Texto from '../Components/Pack/Texto';
+import { Element } from 'react-scroll';
 
 const Subscriptions = () => {
   return (
-    <section className="relative flex h-full flex-col overflow-hidden bg-[#2E2E2E]">
+    <Element
+      name="paquetes"
+      className="relative flex h-full flex-col overflow-hidden bg-[#2E2E2E]"
+    >
       <div className="absolute -right-32 top-4 hidden md:flex">
         <Texto />
       </div>
@@ -19,7 +23,7 @@ const Subscriptions = () => {
         <Pack />
       </div>
       <Testimonios />
-    </section>
+    </Element>
   );
 };
 
