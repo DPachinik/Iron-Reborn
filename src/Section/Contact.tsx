@@ -17,7 +17,6 @@ const Contact = () => {
         </p>
         <Form />
       </div>
-
       <Maps />
     </Element>
   );

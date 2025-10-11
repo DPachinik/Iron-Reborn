@@ -9,7 +9,7 @@ const Subscriptions = () => {
   return (
     <Element
       name="paquetes"
-      className="relative flex h-full flex-col overflow-hidden bg-[#2E2E2E]"
+      className="relative flex h-full flex-col overflow-hidden bg-[#121212]"
     >
       <div className="absolute -right-32 top-4 hidden md:flex">
         <Texto />

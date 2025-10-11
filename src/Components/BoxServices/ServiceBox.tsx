@@ -32,7 +32,7 @@ const ServiceBox = () => {
             >
               {!openText[index] ? (
                 <>
-                  <article className="duration-600 relative z-10 flex flex-col justify-center rounded-lg bg-black px-6 pb-6 transition-all ease-in-out md:h-full">
+                  <article className="duration-600 relative z-10 flex flex-col justify-center rounded-lg bg-[#3A3A3A] px-6 pb-6 transition-all ease-in-out md:h-full">
                     <div className="mb-4 flex w-full items-center justify-center p-4">
                       <img
                         src={items.image}
@@ -73,7 +73,7 @@ const ServiceBox = () => {
                       <img
                         src={items.image2}
                         alt="profesional del área"
-                        className="h-[70px] w-[70px] rounded-full"
+                        className="h-[70px] w-[70px] rounded-full bg-yellow-50"
                       />
 
                       <p className="text-xs md:text-[13px]">{items.fullText}</p>
@@ -84,14 +84,14 @@ const ServiceBox = () => {
                         url="https://www.whatsapp.com/?lang=es"
                         className="bg-[#1C1C1C] hover:bg-green-600"
                       >
-                        <ArrowBendLeftUp size={22} />
+                        <ArrowBendLeftUp size={20} />
                         Agendar Consulta
                       </WhastAppButton>
 
                       <button onClick={() => handleReturnClick(index)}>
                         <Icon
                           size={32}
-                          className="flex rounded-full hover:bg-gray-500"
+                          className="flex rounded-full hover:bg-[#121212]"
                         />
                       </button>
                     </div>

@@ -16,7 +16,7 @@ const About = () => {
       <div className="bg-[#1C1C1C]">
         <Card />
       </div>
-      <div className="bg-[#2E2E2E]">
+      <div className="bg-[#121212]">
         <Services />
       </div>
       <Counter />

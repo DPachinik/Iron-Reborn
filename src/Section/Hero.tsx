@@ -44,7 +44,7 @@ const Hero = () => {
               </div>
 
               <WhastAppButton
-                url="https://www.whatsapp.com/?lang=es"
+                url="https://wa.me/+5950982101391?text=%20Hola,%20vengo%20desde%20la%20web%20,%20quiero%20saber%20más%20sobre%20las%20clases%20y%20paquetes%20disponibles%20me%20interesa%20frecuentar%20el%20gimnasio..."
                 className="bg-[#ff2323] hover:bg-green-600"
               >
                 <WhatsappLogo size={22} />
