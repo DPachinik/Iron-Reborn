@@ -65,3 +65,22 @@
   transform: translateX(0%);
  }
 }
+
+.link-transition{
+  animation-name: link-transition;
+  animation-duration: 1s;
+}
+
+@keyframes link-transition{
+
+  0%{
+        opacity: 0;
+        transform: scale(0.7,0.7);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+  
+}

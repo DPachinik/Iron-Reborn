@@ -5,9 +5,9 @@ import TituloCentral from '../TituloCentral/TituloCentral';
 const Services = () => {
   return (
     <section className="my-8 h-auto pb-12 md:h-dvh">
-      <div className="container mx-auto flex h-full w-auto px-4">
+      <div className="container mx-auto flex h-full w-auto flex-col px-4">
+        <TituloCentral text="Tú jornada fitness comienza por la Salud" />
         <article className="container mx-auto flex h-full flex-col rounded-b-lg">
-          <TituloCentral text="Tú jornada fitness comienza por la Salud" />
           <ServiceBox />
         </article>
       </div>

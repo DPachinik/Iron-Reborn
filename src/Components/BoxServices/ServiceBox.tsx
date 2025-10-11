@@ -22,17 +22,17 @@ const ServiceBox = () => {
 
   return (
     <>
-      <div className="flex h-full w-full flex-col items-center justify-between gap-4 rounded-xl px-8 text-white md:flex-row">
+      <div className="relative flex h-full w-full flex-col items-center justify-between gap-4 rounded-xl px-8 text-white md:flex-row">
         {Servicios.map((items, index) => {
           const Icon = items.icon;
           return (
             <div
               key={index}
-              className="relative mx-4 flex h-[325px] w-[300px] rounded-xl border-l-[2px] border-t-[1px] border-red-600"
+              className="sticky top-4 mx-4 flex h-[325px] w-[300px] rounded-xl border-l-[2px] border-t-[1px] border-red-600 md:static"
             >
               {!openText[index] ? (
                 <>
-                  <article className="duration-400 relative z-10 flex flex-col justify-center rounded-lg bg-gradient-to-br from-black/90 via-black/70 to-black/50 px-6 pb-6 transition-all ease-in-out md:h-full">
+                  <article className="duration-600 relative z-10 flex flex-col justify-center rounded-lg bg-black px-6 pb-6 transition-all ease-in-out md:h-full">
                     <div className="mb-4 flex w-full items-center justify-center p-4">
                       <img
                         src={items.image}
@@ -42,7 +42,7 @@ const ServiceBox = () => {
                     </div>
 
                     <div className="flex flex-col justify-between">
-                      <h4 className="select-none font-exo text-xl font-semibold">
+                      <h4 className="mt-4 select-none font-exo text-xl font-semibold">
                         {items.title}{' '}
                       </h4>
 
@@ -64,7 +64,7 @@ const ServiceBox = () => {
                 </>
               ) : (
                 <>
-                  <article className="flex h-[325px] flex-col justify-between rounded-lg bg-gradient-to-b from-red-800 via-red-600 to-red-800 px-4">
+                  <article className="flex h-[325px] flex-col justify-around rounded-lg bg-gradient-to-b from-red-800 via-red-600 to-red-800 px-4">
                     <h4 className="py-2 text-center font-bold">
                       {items.title}
                     </h4>

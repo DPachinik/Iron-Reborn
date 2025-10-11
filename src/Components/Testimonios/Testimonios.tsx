@@ -4,8 +4,8 @@ import CardTestimonios from './CardTestimonios';
 
 const Testimonios = () => {
   return (
-    <div className="my-8 h-dvh">
-      <div className="mb-8 flex flex-col gap-4 px-8">
+    <div className="my-8 md:h-dvh">
+      <div className="mb-8 flex flex-col gap-4 pl-4">
         <TextoEncabezado text="Opiniones de nuestros alumnos" />
         <p className="pr-4 text-gray-400">
           Conocé cómo nuestros alumnos están logrando sus objetivos, paso a
@@ -17,7 +17,7 @@ const Testimonios = () => {
         <CardTestimonios animationClass="animate-scroll" className="flex" />
         <CardTestimonios
           animationClass="animate-scroll-center"
-          className="hidden md:flex"
+          className="flex"
         />
       </div>
     </div>

@@ -24,16 +24,16 @@ const CardTestimonios: React.FC<TestimoniosProps> = ({
           return (
             <div
               key={index}
-              className="max-w-[450px] rounded-xl bg-[#3A3A3A] p-4 shadow-md transition-transform duration-200 hover:scale-[1.02]"
+              className="my-[3px] w-[300px] rounded-xl bg-[#3A3A3A] p-4 shadow-sm shadow-black/80 transition-transform duration-200 hover:scale-[1.02] md:w-[450px]"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start justify-between gap-4">
                 <img
                   src={element.img}
                   alt={element.name}
-                  className="h-16 w-16 rounded-full object-cover"
+                  className="h-16 w-16 rounded-full bg-yellow-50 object-cover object-center duration-200 hover:scale-125"
                 />
                 <div className="flex flex-col gap-2 text-white">
-                  <h3 className="text-sm font-semibold md:text-base">
+                  <h3 className="text-sm font-medium md:text-lg">
                     {element.name}
                   </h3>
 
@@ -41,10 +41,13 @@ const CardTestimonios: React.FC<TestimoniosProps> = ({
                     {element.testimonio}
                   </p>
 
-                  <div className="mt-4 flex justify-end text-sm text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i}>{Icono}</span>
-                    ))}
+                  <div className="flex items-center gap-2">
+                    <span>5.0</span>
+                    <div className="flex justify-start text-sm text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i}>{Icono}</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

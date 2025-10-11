@@ -1,3 +1,4 @@
+import { CaretDoubleRight } from 'phosphor-react';
 import React, { useState } from 'react';
 
 const Form = () => {
@@ -6,40 +7,75 @@ const Form = () => {
   const [message, setMessage] = useState('');
 
   const InputStyle =
-    'w-auto  h-[30px] md:w-[400px] border-[1px] border-[#3A3A3A] bg-[#2C2C2C] outline-none pl-2 text-[#3A3A3A]';
+    'flex w-full  h-[30px]   pl-2 outline-none  placeholder:text-gray-500 rounded-lg placeholder:bg-white text-sm';
+  const TextAreaStyle =
+    'flex w-full  h-[150px]  bg-[#2C2C2C] outline-none pl-2 placeholder:text-gray-500 rounded-lg bg-white text-sm pt-2';
 
   return (
-    <div className="grid grid-cols-2 items-center py-12">
-      <form className=" ">
-        <div className="flex flex-col items-center gap-4">
+    <form className="mt-8 flex flex-col items-start gap-4 text-gray-400">
+      <div className="flex w-full gap-2 pr-4">
+        <div className="flex w-full flex-col gap-2">
+          <label htmlFor="name" className="font-semibold">
+            Nombre
+          </label>
           <input
+            id="name"
             className={InputStyle}
-            placeholder="Nombre"
+            placeholder="Juan"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <input
-            className={InputStyle}
-            placeholder="Email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <textarea
-            className={InputStyle}
-            placeholder="Mensaje"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <button
-            type="submit"
-            className="w-fit rounded-lg bg-[#ff2323] px-8 text-white"
-          >
-            Enviar
-          </button>
         </div>
-      </form>
-    </div>
+
+        <div className="flex w-full flex-col gap-2">
+          <label htmlFor="second" className="font-semibold">
+            Apellido
+          </label>
+          <input
+            id="second"
+            className={InputStyle}
+            placeholder="Pérez"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+      </div>
+
+      <div className="flex w-full flex-col gap-1 pr-4">
+        <label htmlFor="email" className="font-semibold">
+          Email
+        </label>
+        <input
+          id="email"
+          className={InputStyle}
+          placeholder="juanperez@gmail.com"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+
+      <div className="flex h-[200px] w-full flex-col gap-2 pr-4">
+        <label htmlFor="mensaje" className="font-semibold">
+          Tú mensaje
+        </label>
+        <textarea
+          id="mensaje"
+          className={TextAreaStyle}
+          placeholder="Hola! me interesa saber más..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="flex w-fit items-center justify-center gap-4 rounded-lg bg-[#ff2323] p-2 px-6 font-exo text-sm font-semibold text-white hover:bg-green-500"
+      >
+        ENVIAR MENSAJE
+        <CaretDoubleRight size={18} />
+      </button>
+    </form>
   );
 };
 

@@ -33,7 +33,7 @@ const Card = () => {
               key={index}
               className={` ${index % 2 === 0 ? 'bg-black' : 'bg-gray-400'} h-[300px] w-[300px] clip-diagonal-menor`}
             >
-              <article className="flex h-full w-full flex-col justify-around text-center">
+              <article className="sticky top-0 flex h-full w-full flex-col justify-around text-center">
                 <div
                   className={` ${index % 2 === 1 ? 'bg-black' : 'bg-[#ff2323]'} mx-auto mt-4 flex justify-center p-3`}
                 >
