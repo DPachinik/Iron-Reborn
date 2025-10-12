@@ -22,10 +22,10 @@ export default {
         glowRed: '0 0 15px rgba(255, 0, 0, 0.9)',
       },
       backgroundImage:{
-        logo:"url('r.png')",
+        logo:"url('/r.png')",
         radial: 'radial-gradient(var(--tw-gradient-stops))',
         mosaico:"url('mosaico.png')",
-        arco:"url('arco1.svg')",
+        arco:"url('/arco1.svg')",
         elipses:"url('elipses.svg')",
         elipse:"url('elipse.svg')",
 
