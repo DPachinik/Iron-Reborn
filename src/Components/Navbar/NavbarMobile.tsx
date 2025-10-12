@@ -20,6 +20,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
   const handleItemClose = () => setMenuOpen(false);
 
   useEffect(() => {
+    // Evita que el scroll se mueva cuando el menú está abierto
     if (window.innerWidth < 768) {
       document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
     }
@@ -28,6 +29,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
   return (
     <nav className="fixed left-0 top-0 z-50 w-full">
       <div className="flex h-[70px] items-center justify-between bg-[#121212] px-2 py-2 font-exo">
+        {/* Botón menú */}
         <div>
           {menuOpen ? (
             <X
@@ -46,14 +48,22 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
           )}
         </div>
 
+        {/* Título */}
         <div className="ml-8 flex items-center text-center text-white">
           <p>IRON REBORN</p>
         </div>
 
-        <div className="absolute inset-0 left-0 top-[70px] h-[500px]">
+        {/* Menú desplegable */}
+        <div
+          className={`absolute left-0 top-[70px] w-full transition-all duration-300 ${
+            menuOpen
+              ? 'z-40 h-[500px]'
+              : 'pointer-events-none z-0 h-0 overflow-hidden'
+          }`}
+        >
           <ul
             className={`flex h-full flex-col items-center justify-around gap-8 py-8 text-white ${
-              menuOpen ? 'bg-[#121212]' : 'pointer-events-none hidden'
+              menuOpen ? 'bg-[#121212]' : 'hidden'
             }`}
             role="menu"
           >
@@ -79,13 +89,15 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
           </ul>
         </div>
 
+        {/* Overlay */}
         {menuOpen && (
           <div
-            className="fixed inset-0 top-[570px] z-10 bg-white/40 opacity-50"
+            className="fixed inset-0 z-30 bg-white/40 opacity-50"
             onClick={handleMenuClose}
           />
         )}
 
+        {/* Login */}
         <div>
           <NavLink to="/" className="flex items-center gap-2 text-white">
             Login
