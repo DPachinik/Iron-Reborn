@@ -10,7 +10,7 @@ export type ReseñasTypes = {
 
 const Reseñas: ReseñasTypes[] = [
   {
-    img: '/jorge.png',
+    img: '/jorgeortiz.png',
     name: 'Jorge Ortiz, 53 años',
     testimonio:
       'Tenés ese equilibrio entre entrenamiento fuerte y cuidado personalizado. ¡Eso marca la diferencia!',
