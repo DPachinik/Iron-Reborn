@@ -19,7 +19,7 @@ export const Servicios: serviciosTypes[] = [
     title: 'NUTRICIÓN',
     text: 'Objetivos claros de forma saludable y personalizada.',
     fullText:
-      'El área de nutrición está dirigida por un profesional con formación en nutrición clínica, nutrición deportiva y certificación en antropometría, especializado en la evaluación de la composición corporal y en la planificación de estrategias alimentarias orientadas a procesos de hipertrofia muscular y definición, adaptadas al tipo de entrenamiento y requerimientos individuales.',
+      'El área de nutrición está dirigida por un profesional con formación en nutrición clínica, deportiva y certificación en antropometría, especializado en la evaluación de la composición corporal y en la planificación de estrategias alimentarias orientadas a procesos de hipertrofia muscular y definición, adaptadas al tipo de entrenamiento y requerimientos individuales.',
     icon: ArrowRight,
     image: nutriologa,
     image2: profesional,
