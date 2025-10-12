@@ -22,35 +22,20 @@ export default {
         glowRed: '0 0 15px rgba(255, 0, 0, 0.9)',
       },
       backgroundImage:{
-        nutriologa:"url('nutriologa.jpg')",
+        logo:"url('r.png')",
         radial: 'radial-gradient(var(--tw-gradient-stops))',
+        mosaico:"url('mosaico.png')",
+        arco:"url('arco1.svg')",
+        elipses:"url('elipses.svg')",
+        elipse:"url('elipse.svg')",
+
       }
     },
   },
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        ".clip-tl-45": {
-          clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%)",
-        },
-        ".clip-tr-45": {
-          clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)",
-        },
-        ".clip-bl-45": {
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%)",
-        },
-        ".clip-br-45": {
-          clipPath: "polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)",
-        },
-        ".clip-bottom-convex": {
-          clipPath: "ellipse(80% 90% at 50% 100%)",
-        },
-        ".clip-tl-br-45": {
-        clipPath: "polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)",
-        },
-        ".clip-tr-bl-45": {
-          clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%)",
-        },
+
         ".clip-diagonal-izquierdo":{
         clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)"
         },
@@ -58,6 +43,10 @@ export default {
         clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)"
         },
 
+        ".clip-diagonal-menor":{
+        clipPath:"polygon(20% 0, 100% 0, 100% 80%, 79% 100%, 0 100%, 0 21%)"
+        },
+        
       
       });
     },
