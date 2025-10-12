@@ -79,7 +79,7 @@ const Pack = () => {
 
                   <div className="flex h-full w-full items-end justify-center">
                     <WhastAppButton
-                      url="#"
+                      url={element.mensaje}
                       className={`flex items-center justify-center py-1 font-exo text-sm font-normal duration-200 hover:scale-110 ${i % 2 == 0 ? 'bg-[#ff2323]' : 'bg-black'}`}
                     >
                       <p>comprar ahora</p>
