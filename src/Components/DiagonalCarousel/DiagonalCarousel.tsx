@@ -59,8 +59,6 @@ const DiagonalCarousel = () => {
         </div>
       </div>
 
-      {/* Flechas (fuera del viewport para no romper element ancho) */}
-
       <div className="absolute bottom-4 left-2 rounded-full bg-[#ff2323] shadow-md shadow-black hover:scale-90">
         <ArrowBendUpLeft
           size={36}
