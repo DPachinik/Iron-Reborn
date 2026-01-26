@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Element
       name="contacto"
-      className="grid h-dvh grid-cols-1 bg-[#1C1C1C] md:grid-cols-2"
+      className="grid h-dvh grid-cols-1 bg-[#1C1C1C] md:h-[calc(100dvh-70px)] md:grid-cols-2"
     >
       <div className="flex w-full flex-col pl-4 md:pl-8">
         <Subtitulo text="Contacto" />
