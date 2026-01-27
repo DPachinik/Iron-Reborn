@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
-export function Footer() {
+export default function Footer() {
   return (
     <section className="flex h-[70px] items-center bg-[#121212] px-4">
       <div className="mx-auto flex h-fit w-full max-w-3xl items-center justify-between">

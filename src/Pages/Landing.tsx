@@ -1,7 +1,7 @@
 import About from '../Section/About';
 import Class from '../Section/Class';
 import Contact from '../Section/Contact';
-import { Footer } from '../Section/Footer';
+import Footer from '../Section/Footer';
 import Hero from '../Section/Hero';
 import Subscriptions from '../Section/Subscriptions';
 
