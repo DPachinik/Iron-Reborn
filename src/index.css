@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 .fondo{
   background: radial-gradient(circle at 50% 24%, #ff2323 -10%, transparent 10%);
   background-repeat: no-repeat;
