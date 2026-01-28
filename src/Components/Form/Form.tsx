@@ -58,7 +58,7 @@ const Form = () => {
       >
         <div className="flex w-full gap-6 pr-4">
           <div className="flex w-full flex-col gap-2">
-            <legend className="text-white">
+            <legend className="font-exo text-white">
               {inputActive ? 'NOMBRE' : ''}
             </legend>
             <input
@@ -71,7 +71,9 @@ const Form = () => {
             />
           </div>
           <div className="pr flex w-full flex-col gap-2">
-            <legend className="text-white">{inputActive ? 'EMAIL' : ''}</legend>
+            <legend className="font-exo text-white">
+              {inputActive ? 'EMAIL' : ''}
+            </legend>
             <input
               id="email"
               className={InputStyle}
@@ -85,7 +87,9 @@ const Form = () => {
         </div>
 
         <div className="flex w-full flex-col gap-2 pr-4">
-          <legend className="text-white">{inputActive ? 'MENSAJE' : ''}</legend>
+          <legend className="font-exo text-white">
+            {inputActive ? 'MENSAJE' : ''}
+          </legend>
           <textarea
             id="mensaje"
             className={TextAreaStyle}

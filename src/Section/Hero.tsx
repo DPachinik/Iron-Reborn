@@ -30,10 +30,13 @@ const Hero = () => {
                 <p className="font-exo font-bold text-gray-400">SÉ FUERTE!</p>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <div className="lg:5xl md:block-inline flex gap-2 font-exo text-2xl font-bold text-gray-200 md:gap-4 md:text-4xl">
-                  <p>SALUD Y </p>
-                  <p> FITNESS</p>
+              <div className="flex max-w-lg flex-col gap-2">
+                <div className="lg:5xl flex gap-2 font-exo text-2xl font-bold text-gray-200 md:flex-col md:gap-4 md:text-4xl">
+                  <div className="flex gap-2">
+                    <p>SALUD </p>
+                    <p>Y </p>
+                  </div>
+                  <p>FITNESS</p>
                 </div>
 
                 <p className="text-gray-400 md:text-lg">
@@ -56,7 +59,7 @@ const Hero = () => {
           <div className="relative flex h-full w-full items-end justify-center bg-black/90">
             <img
               src={torso}
-              alt="pareja entrenando"
+              alt="hombre con mancuerna"
               className="absolute inset-0 h-full w-full object-contain object-right"
             />
 

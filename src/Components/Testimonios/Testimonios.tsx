@@ -5,7 +5,7 @@ import CardTestimonios from './CardTestimonios';
 const Testimonios = () => {
   return (
     <div className="my-8 md:h-dvh">
-      <div className="mb-8 flex flex-col gap-4 pl-4">
+      <div className="mb-8 flex flex-col gap-4 pl-4 md:pl-10">
         <TextoEncabezado text="Opiniones de nuestros alumnos" />
         <p className="pr-4 text-gray-400">
           Conocé cómo nuestros alumnos están logrando sus objetivos, paso a

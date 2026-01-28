@@ -20,42 +20,27 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
   const handleItemClose = () => setMenuOpen(false);
 
   useEffect(() => {
-    // Evita que el scroll se mueva cuando el menú está abierto
     if (window.innerWidth < 768) {
       document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
     }
   }, [menuOpen]);
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full">
-      <div className="flex h-[70px] items-center justify-between bg-[#121212] px-2 py-2 font-exo">
-        {/* Botón menú */}
+    <nav className="border-b-px fixed left-0 top-0 z-50 w-full border-[#ff2323]">
+      <div className="flex h-[70px] items-center justify-between bg-[#121212] px-4 py-2 font-exo">
         <div>
-          {menuOpen ? (
-            <X
-              size={26}
-              color="white"
-              onClick={handleMenuClose}
-              aria-label="cerrar menú"
-            />
-          ) : (
-            <List
-              size={30}
-              color="white"
-              onClick={handleMenuOpen}
-              aria-label="abrir menú"
-            />
-          )}
+          <NavLink to="/" className="flex items-center gap-2 text-white">
+            <UserCircle size={30} color="white" />
+          </NavLink>
         </div>
 
-        {/* Título */}
         <div className="ml-8 flex items-center text-center text-white">
           <p>IRON REBORN</p>
         </div>
 
         {/* Menú desplegable */}
         <div
-          className={`absolute left-0 top-[70px] w-full transition-all duration-300 ${
+          className={`absolute left-0 top-[70px] w-full border-b-2 border-[#ff2323] transition-all duration-300 ${
             menuOpen
               ? 'z-40 h-[500px]'
               : 'pointer-events-none z-0 h-0 overflow-hidden'
@@ -63,14 +48,14 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
         >
           <ul
             className={`flex h-full flex-col items-center justify-around gap-8 py-8 text-white ${
-              menuOpen ? 'bg-[#121212]' : 'hidden'
+              menuOpen ? 'bg-[#121212] transition-all duration-1000' : 'hidden'
             }`}
             role="menu"
           >
             {navbarLinks.map((links, index) => (
               <li
                 key={index}
-                className="flex w-full items-center"
+                className="flex w-full items-center hover:border-b hover:border-[#ff2323]"
                 role="menuitem"
               >
                 <ScrollLink
@@ -92,17 +77,27 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
         {/* Overlay */}
         {menuOpen && (
           <div
-            className="fixed inset-0 z-30 bg-white/40 opacity-50"
+            className="fixed inset-0 top-[70px] z-30 bg-white/40 opacity-50"
             onClick={handleMenuClose}
           />
         )}
 
-        {/* Login */}
         <div>
-          <NavLink to="/" className="flex items-center gap-2 text-white">
-            Login
-            <UserCircle size={30} color="white" />
-          </NavLink>
+          {menuOpen ? (
+            <X
+              size={26}
+              color="white"
+              onClick={handleMenuClose}
+              aria-label="cerrar menú"
+            />
+          ) : (
+            <List
+              size={30}
+              color="white"
+              onClick={handleMenuOpen}
+              aria-label="abrir menú"
+            />
+          )}
         </div>
       </div>
     </nav>

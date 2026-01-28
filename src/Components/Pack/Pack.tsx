@@ -22,7 +22,7 @@ const Pack = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:h-dvh md:grid-cols-2">
+    <div className="grid grid-cols-1">
       <div className="flex items-start">
         <PackHeader />
       </div>
@@ -41,7 +41,10 @@ const Pack = () => {
           />
         </div>
 
-        <div ref={emblaRef} className="my-4 max-w-[600px] overflow-hidden">
+        <div
+          ref={emblaRef}
+          className="my-4 max-w-[600px] overflow-hidden md:max-w-[700px]"
+        >
           <div className="flex px-4">
             {paquetes.map((element, i) => (
               <div

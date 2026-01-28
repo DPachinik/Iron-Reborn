@@ -13,20 +13,20 @@ type NavbarProps = {
 
 const Navbar = ({ navbarLinks }: NavbarProps) => {
   return (
-    <nav className="fixed left-0 top-0 z-50 flex w-full">
+    <nav className="fixed left-0 top-0 z-50 flex w-full border-b border-[#ff2323]">
       <div className="z-20 mx-auto flex h-[70px] w-full items-center justify-between bg-[#121212] px-8 py-2 font-exo">
         <a
           href="/"
           className="flex items-center gap-2 font-semibold text-white"
         >
           <img src="/r.png" alt="logotipo" className="h-[50px] w-[40px]" />
-          <span>IRON REBORN</span>
+          <span className="text-center">IRON REBORN</span>
         </a>
 
-        <div className="flex">
-          <ul className="flex items-center gap-8 text-white">
+        <div className="flex gap-6">
+          <ul className="flex items-center gap-3 text-center text-white">
             {navbarLinks.map((links, index) => (
-              <li key={index} role="link section">
+              <li key={index} role="link section" className="">
                 <ScrollLink
                   to={links.to}
                   smooth={true}
@@ -42,9 +42,8 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
             ))}
           </ul>
 
-          <div className="ml-20" role="link section">
+          <div className="flex" role="link section">
             <NavLink to="/" className="flex items-center gap-1 text-white">
-              Login
               <UserCircle size={30} color="white" />
             </NavLink>
           </div>

@@ -4,14 +4,14 @@ import { navbarLinks } from '../../Data/navbarLinks';
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <div className="flex w-full md:hidden">
         <NavbarMobile navbarLinks={navbarLinks} />
       </div>
       <div className="hidden md:flex md:w-full">
         <NavbarDesktop navbarLinks={navbarLinks} />
       </div>
-    </>
+    </div>
   );
 };
 
