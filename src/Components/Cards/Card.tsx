@@ -32,6 +32,7 @@ const Card = () => {
             <div
               key={index}
               className={` ${index % 2 === 0 ? 'bg-black' : 'bg-gray-400'} h-[300px] w-[300px] clip-diagonal-menor`}
+              data-aos="flip-left"
             >
               <article className="sticky top-0 flex h-full w-full flex-col justify-around text-center">
                 <div

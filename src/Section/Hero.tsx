@@ -56,11 +56,12 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative flex h-full w-full items-end justify-center bg-black/90">
+          <div className="relative flex h-full w-full items-end justify-center overflow-x-hidden bg-black/90">
             <img
               src={torso}
               alt="hombre con mancuerna"
               className="absolute inset-0 h-full w-full object-contain object-right"
+              data-aos="fade-left"
             />
 
             <LetrasRotadas

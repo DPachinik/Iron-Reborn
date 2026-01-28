@@ -4,7 +4,7 @@ import TituloCentral from '../TituloCentral/TituloCentral';
 
 const PersonalCards = () => {
   return (
-    <div className="fle flex-col gap-4">
+    <div className="fle flex-col gap-4 overflow-x-hidden">
       <TituloCentral text="Equipo de Entrenadores" />
       <article className="flex flex-col gap-10 md:mx-8 lg:mt-20">
         {Coach.map((item, index) => (
@@ -12,7 +12,12 @@ const PersonalCards = () => {
             key={index}
             className={`mx-auto flex w-full flex-col ${index % 2 == 0 ? 'items-end' : 'items-start'} `}
           >
-            <div className="relative h-[120px] w-full md:h-[150px] md:w-[650px]">
+            <div
+              className="relative h-[120px] w-full md:h-[150px] md:w-[650px]"
+              data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
+              data-aos-offset="400"
+              data-aos-anchor-placement="center-bottom"
+            >
               <div
                 className={`mb-10 flex h-full w-full justify-between rounded-md bg-gradient-to-b from-red-900 via-[#ff2323] to-red-900 text-end md:gap-4 ${index % 2 === 0 ? 'clip-diagonal-izquierdo' : 'clip-diagonal-derecho'} `}
               >

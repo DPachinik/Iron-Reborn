@@ -7,8 +7,11 @@ import WhastAppButton from '../WhastAppButton/WhastAppButton';
 
 const HeaderClass = () => {
   return (
-    <div className="grid grid-cols-1 items-start gap-4 md:gap-8 lg:grid-cols-2 lg:gap-16">
-      <div className="mt-12 flex flex-col gap-4 md:mt-0">
+    <div className="grid grid-cols-1 items-start gap-4 overflow-x-hidden overflow-y-hidden md:gap-8 lg:grid-cols-2 lg:gap-16">
+      <div
+        className="mt-12 flex flex-col gap-4 md:mt-0"
+        data-aos="fade-up-right"
+      >
         <Subtitulo text="NUESTRAS CLASES" />
         <TextoEncabezado text="Encuentra el Entrenamiento Perfecto para tus Objetivos" />
 
@@ -27,7 +30,10 @@ const HeaderClass = () => {
         </WhastAppButton>
       </div>
 
-      <div className="flex h-full w-full flex-col items-center justify-center bg-arco bg-contain bg-center bg-no-repeat pt-8 md:pl-4 lg:items-end">
+      <div
+        className="flex h-full w-full flex-col items-center justify-center bg-arco bg-contain bg-center bg-no-repeat pt-8 md:pl-4 lg:items-end"
+        data-aos="fade-up-left"
+      >
         <DiagonalCarousel />
       </div>
     </div>

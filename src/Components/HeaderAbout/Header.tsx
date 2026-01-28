@@ -8,7 +8,11 @@ const Header = () => {
   return (
     <div className="flex h-full flex-col px-4 py-4 md:px-0 md:py-8">
       <article className="container mx-auto grid h-full grid-cols-1 gap-2 md:grid-cols-2 md:gap-0">
-        <div className="flex flex-col space-y-2 px-4 text-[14px] text-white md:justify-around">
+        <div
+          className="flex flex-col space-y-2 px-4 text-[14px] text-white md:justify-around"
+          data-aos="fade-up-right"
+          data-aos-offset="400"
+        >
           <Subtitulo text="¿QUIENES SOMOS?" />
 
           <TextoEncabezado text="Tu Destino Definitivo de Fitness y Bienestar" />
@@ -68,7 +72,10 @@ const Header = () => {
         </div>
 
         <div className="hidden items-center justify-end md:flex lg:pr-20">
-          <div className="h-[350px] w-[350px] rounded-full bg-radial from-black via-[#1C1C1C] shadow-xl shadow-red-800 lg:h-[400px] lg:w-[400px]">
+          <div
+            className="h-[350px] w-[350px] rounded-full bg-radial from-black via-[#1C1C1C] shadow-xl shadow-red-800 lg:h-[400px] lg:w-[400px]"
+            data-aos="fade-up-left"
+          >
             <div className="relative flex h-[350px] w-[350px] items-center justify-center bg-logo bg-contain bg-right bg-no-repeat shadow-xl clip-diagonal-menor lg:h-[400px] lg:w-[400px]">
               <img
                 src="/body.png"

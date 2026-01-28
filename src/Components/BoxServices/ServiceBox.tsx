@@ -28,6 +28,7 @@ const ServiceBox = () => {
           <div
             key={index}
             className="sticky top-[100px] mx-auto flex h-[325px] rounded-xl border-l-[2px] border-t-[1px] border-red-600 bg-[#3A3A3A] md:static md:max-h-fit"
+            data-aos="zoom-in"
           >
             {!openText[index] ? (
               <article className="relative z-10 flex w-full max-w-sm flex-col justify-center rounded-lg bg-[#3A3A3A] px-6 pb-6 transition-all duration-700 ease-in-out">
