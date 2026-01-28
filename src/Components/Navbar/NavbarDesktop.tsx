@@ -24,7 +24,7 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
         </a>
 
         <div className="flex gap-6">
-          <ul className="flex items-center gap-3 text-center text-white">
+          <ul className="flex items-center gap-3 text-center text-white lg:gap-6">
             {navbarLinks.map((links, index) => (
               <li key={index} role="link section" className="">
                 <ScrollLink
