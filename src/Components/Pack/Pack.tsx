@@ -49,7 +49,7 @@ const Pack = () => {
             {paquetes.map((element, i) => (
               <div
                 key={i}
-                className={`mx-3 h-[350px] min-w-0 flex-[0_0_100%] shadow-md shadow-black md:flex-[0_0_calc(100%/2)] ${i % 2 === 0 ? 'card-red text-white' : 'card-gray text-white'} m-2 max-w-[250px] rounded-xl hover:cursor-grab`}
+                className={`s mx-3 h-[350px] min-w-0 flex-[0_0_100%] shadow-md md:flex-[0_0_calc(100%/2)] ${i % 2 === 0 ? 'card-red text-white' : 'bg-gray-500 text-white'} m-2 max-w-[250px] rounded-xl hover:cursor-grab`}
               >
                 <article className="flex h-full select-none flex-col justify-between p-3">
                   <div>
@@ -73,19 +73,19 @@ const Pack = () => {
                         <li key={key} className="flex gap-2 text-sm">
                           <Check
                             size={20}
-                            className="flex-shrink-0 rounded-full bg-black p-1 text-[#ff2323] shadow-sm shadow-white"
+                            className="flex-shrink-0 rounded-full bg-black/60 p-1 text-[#ff2323]"
                           />
                           {value}
                         </li>
                       ))}
                   </ul>
 
-                  <div className="flex h-full w-full items-end justify-center">
+                  <div className="mx-auto flex h-full w-full max-w-[60%] items-end justify-center">
                     <WhastAppButton
                       url={element.mensaje}
-                      className={`flex items-center justify-center py-1 font-exo text-sm font-normal duration-200 hover:scale-110 ${i % 2 == 0 ? 'bg-[#ff2323]' : 'bg-black'}`}
+                      className="flex items-center justify-center bg-black/70 py-1 font-exo text-sm font-normal"
                     >
-                      <p>comprar ahora</p>
+                      <p className="text-nowrap text-sm">comprar ahora</p>
                       <ArrowUpRight size={16} />
                     </WhastAppButton>
                   </div>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Pack from '../Components/Pack/Pack';
 import Testimonios from '../Components/Testimonios/Testimonios';
 import { Element } from 'react-scroll';

@@ -20,7 +20,7 @@ const DiagonalCarousel = () => {
     <div className="relative overflow-x-hidden pr-4">
       <div
         ref={emblaRef}
-        className="h-[400px] w-auto max-w-[350px] overflow-hidden md:h-[380px] md:w-[650px] lg:w-full"
+        className="h-[400px] w-auto max-w-[350px] overflow-hidden md:h-[380px] md:max-w-[400px] lg:w-full"
       >
         <div className="flex h-full">
           {clases.map((element, index) => {
@@ -40,7 +40,10 @@ const DiagonalCarousel = () => {
                   </div>
 
                   <div className="slide-diagonal flex h-full flex-1 items-end justify-end pb-12 lg:pb-0">
-                    <div className="flex h-[200px] w-[210px] flex-col justify-center gap-2 bg-black p-4 px-4 pb-4 clip-diagonal-menor md:h-[270px]">
+                    <div className="relative flex h-[200px] w-[210px] flex-col justify-center gap-2 bg-black p-4 px-4 pb-4 clip-diagonal-menor md:h-[270px]">
+                      <span className="absolute left-10 top-4 font-exo text-xl font-medium text-slate-400">
+                        0{element.id}
+                      </span>
                       <div className="flex w-full justify-center text-[#ff2323]">
                         <Icon className="text-4xl" />
                       </div>
@@ -59,7 +62,7 @@ const DiagonalCarousel = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-2 rounded-full bg-[#ff2323] shadow-md shadow-black hover:scale-90">
+      <div className="absolute bottom-3 left-3 rounded-full bg-[#ff2323] shadow-md shadow-black hover:scale-90">
         <ArrowBendUpLeft
           size={36}
           onClick={scrollNext}

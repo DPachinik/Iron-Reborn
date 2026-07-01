@@ -1,6 +1,5 @@
-import { List, UserCircle, X } from 'phosphor-react';
+import { List, X } from 'phosphor-react';
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 type NavbarLinksType = {
@@ -28,14 +27,11 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
   return (
     <nav className="border-b-px fixed left-0 top-0 z-50 w-full border-[#ff2323]">
       <div className="flex h-[70px] items-center justify-between bg-[#121212] px-4 py-2 font-exo">
-        <div>
-          <NavLink to="/" className="flex items-center gap-2 text-white">
-            <UserCircle size={30} color="white" />
-          </NavLink>
-        </div>
-
-        <div className="ml-8 flex items-center text-center text-white">
-          <p>IRON REBORN</p>
+        <div className="flex items-center gap-4 text-center text-white">
+          <img src="/r.png" alt="logotipo" className="h-[40px] w-[30px]" />
+          <p className="text-center text-lg font-bold">
+            IRON <span className="text-[#ff2323]">REBORN</span>
+          </p>
         </div>
 
         {/* Menú desplegable */}

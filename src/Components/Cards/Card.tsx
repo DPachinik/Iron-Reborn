@@ -69,15 +69,15 @@ const Card = () => {
       </div>
 
       {openModal && selectedIndex !== null && (
-        <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-[#4A4A4A] bg-opacity-80">
+        <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-mosaico bg-contain">
           <article className="max-h container grid w-[90%] grid-cols-1 p-4 md:w-[70%] md:grid-cols-[400px_auto]">
-            <div className="z-10 flex h-auto min-h-[200px] flex-col justify-between rounded-xl bg-black p-8 text-center md:w-[400px]">
+            <div className="relative z-10 flex h-auto min-h-[200px] flex-col justify-between rounded-xl bg-black p-8 text-center md:w-[400px]">
               <div className="flex w-full justify-center">
                 <h3 className="flex font-exo text-xl font-bold text-[#ff2323] md:text-2xl">
                   {descriptions[selectedIndex].title}
                 </h3>
 
-                <div className="md:hidden">
+                <div className="absolute -right-5 top-0 md:hidden">
                   <ClosedButton handleCloseClick={handleCloseClick} />
                 </div>
               </div>

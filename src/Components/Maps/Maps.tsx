@@ -44,7 +44,7 @@ const Maps = () => {
     <div className="flex w-full items-center">
       <div
         ref={mapContainerRef}
-        className="mt-8 h-[300px] w-full rounded-xl shadow-md md:mt-0"
+        className="my-8 h-[300px] w-full shadow-md md:mt-0 md:rounded-xl"
       />
     </div>
   );

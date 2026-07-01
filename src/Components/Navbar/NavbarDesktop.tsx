@@ -1,6 +1,4 @@
-import { NavLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import { UserCircle } from 'phosphor-react';
 
 type NavbarLinksType = {
   label: string;
@@ -20,7 +18,9 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
           className="flex items-center gap-2 font-semibold text-white"
         >
           <img src="/r.png" alt="logotipo" className="h-[50px] w-[40px]" />
-          <span className="text-center">IRON REBORN</span>
+          <p className="text-center text-xl font-bold">
+            IRON <span className="text-[#ff2323]">REBORN</span>
+          </p>
         </a>
 
         <div className="flex gap-6">
@@ -41,12 +41,6 @@ const Navbar = ({ navbarLinks }: NavbarProps) => {
               </li>
             ))}
           </ul>
-
-          <div className="flex" role="link section">
-            <NavLink to="/" className="flex items-center gap-1 text-white">
-              <UserCircle size={30} color="white" />
-            </NavLink>
-          </div>
         </div>
       </div>
     </nav>

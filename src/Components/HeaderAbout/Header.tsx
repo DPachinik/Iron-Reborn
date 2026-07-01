@@ -17,7 +17,7 @@ const Header = () => {
 
           <TextoEncabezado text="Tu Destino Definitivo de Fitness y Bienestar" />
 
-          <p className="text-sm text-gray-400 md:text-base">
+          <p className="text-sm text-gray-400 md:text-base xl:text-base">
             Somos un gimnasio comprometido con el entrenamiento serio y
             resultados reales. Contamos con equipamiento de alta calidad,
             entrenadores profesionales y un ambiente enfocado en el progreso
@@ -25,11 +25,11 @@ const Header = () => {
           </p>
 
           <div className="space-y-4 py-4">
-            <p className="text-md font-semibold text-[#ff2323] md:text-lg">
+            <p className="text-md font-semibold text-[#ff2323] md:text-xl">
               Nos especializamos en:
             </p>
 
-            <div className="grid grid-cols-1 bg-[#3A3A3A] p-4 text-sm md:grid-cols-2 md:gap-2 lg:text-base">
+            <div className="grid grid-cols-1 bg-[#3A3A3A] p-4 text-sm md:gap-2 lg:grid-cols-2 lg:text-base">
               <ul className="space-y-1">
                 {funciones.map((items, index) =>
                   index <= 3 ? (
@@ -66,23 +66,21 @@ const Header = () => {
             />
             <div>
               <p className="text-xs">SOPORTE AL CLIENTE</p>
-              <p className="font-exo text-sm text-[#ff2323]">+595 0982101391</p>
+              <strong className="font-exo text-sm text-[#ff2323]">
+                +595 0982101391
+              </strong>
             </div>
           </div>
         </div>
 
-        <div className="hidden items-center justify-end md:flex lg:pr-20">
-          <div
-            className="h-[350px] w-[350px] rounded-full bg-radial from-black via-[#1C1C1C] shadow-xl shadow-red-800 lg:h-[400px] lg:w-[400px]"
-            data-aos="fade-up-left"
-          >
-            <div className="relative flex h-[350px] w-[350px] items-center justify-center bg-logo bg-contain bg-right bg-no-repeat shadow-xl clip-diagonal-menor lg:h-[400px] lg:w-[400px]">
-              <img
-                src="/body.png"
-                alt="Atleta"
-                className="top-50% left-50% absolute h-[400px] w-[300px] shadow-white drop-shadow-xl"
-              />
-            </div>
+        <div className="relative hidden items-center justify-center overflow-hidden md:flex">
+          <div className="animate-pin h-[300px] w-[300px] rounded-full border border-[#ff2323] bg-radial from-[#1C1C1C] via-[#1C1C1C] shadow-xl shadow-red-700 lg:h-[400px] lg:w-[400px]"></div>
+          <div className="md: absolute flex justify-center bg-logo bg-contain bg-right bg-no-repeat shadow-xl clip-diagonal-menor lg:h-[400px] lg:w-[400px]">
+            <img
+              src="/body.png"
+              alt="Atleta"
+              className="top-50% left-50% h-[300px] w-full shadow-white drop-shadow-xl lg:h-[400px]"
+            />
           </div>
         </div>
       </article>

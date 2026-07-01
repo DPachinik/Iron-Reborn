@@ -34,49 +34,60 @@ const Horarios = () => {
             <tr className="text-center">
               <td className={hourCellStyle}>05:00 - 12:00</td>
               <td colSpan={5} className={classCellStyle}>
-                Musculación
+                Musculación + Cardio
               </td>
+              <td className={baseBorder}></td>
+            </tr>
+            <tr className="text-center">
+              <td className={hourCellStyle}>05:45 - 07:00</td>
+              <td colSpan={1} className={classCellStyle}></td>
+              <td colSpan={1} className={classCellStyle}>
+                Pilates
+              </td>
+              <td colSpan={1} className={classCellStyle}></td>
+              <td colSpan={1} className={classCellStyle}>
+                Pilates
+              </td>
+              <td colSpan={1} className={classCellStyle}></td>
               <td className={baseBorder}></td>
             </tr>
 
             <tr className="text-center">
               <td className={hourCellStyle}>12:00 - 19:00</td>
               <td colSpan={5} className={classCellStyle}>
-                Musculación
+                Musculación + Cardio
               </td>
               <td className={baseBorder}></td>
             </tr>
 
             <tr className="text-center">
-              <td className={hourCellStyle}>14:00 - 18:00</td>
-              <td colSpan={5} className={baseBorder}></td>
-              <td className={classCellStyle}>Musculación</td>
+              <td className={hourCellStyle}>14:00 - 19:00</td>
+              <td colSpan={5} className={classCellStyle}>
+                Pilates
+              </td>
+              <td className={classCellStyle}>Musculación + Cardio</td>
             </tr>
 
             <tr className="text-center">
               <td className={hourCellStyle}>19:00 - 20:00</td>
-              <td className={classCellStyle}>Musc. + Funcional</td>
-              <td className={classCellStyle}>Musc.</td>
-              <td className={classCellStyle}>Musc. + Funcional</td>
-              <td className={classCellStyle}>Musc.</td>
-              <td className={classCellStyle}>Musc. + Funcional</td>
+              <td colSpan={5} className={classCellStyle}>
+                Musculación + Cardio
+              </td>
               <td className={classCellStyle}></td>
             </tr>
 
             <tr className="text-center">
               <td className={hourCellStyle}>20:00 - 21:00</td>
-              <td className={classCellStyle}>Musc. + Cardio</td>
-              <td className={classCellStyle}>Musc.</td>
-              <td className={classCellStyle}>Musc. + Cardio</td>
-              <td className={classCellStyle}>Musc.</td>
-              <td className={classCellStyle}>Musc. + Cardio</td>
+              <td colSpan={5} className={classCellStyle}>
+                Musculación + Cardio
+              </td>
               <td className={classCellStyle}></td>
             </tr>
 
             <tr className="text-center">
               <td className={hourCellStyle}>21:00 - 22:00</td>
               <td colSpan={5} className={classCellStyle}>
-                Musculación
+                Musculación + Cardio
               </td>
               <td className={classCellStyle}></td>
             </tr>

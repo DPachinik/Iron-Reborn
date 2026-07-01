@@ -23,7 +23,7 @@ const HeaderClass = () => {
 
         <WhastAppButton
           url="https://wa.me/+5950982101391?text=%20Hola,%20vengo%20desde%20la%20web%20,%20quiero%20saber%20más%20sobre%20las%20clases%20y%20paquetes%20disponibles%20me%20interesa%20frecuentar%20el%20gimnasio..."
-          className="bg-[#ff2323] hover:bg-green-600"
+          className="bg-[#ff2323] hover:bg-green-600 lg:ml-2 lg:mt-8"
         >
           <TrendUp size={22} />
           <p className="text-sm">Empezá tu cambio</p>
