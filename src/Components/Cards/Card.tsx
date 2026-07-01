@@ -69,7 +69,7 @@ const Card = () => {
       </div>
 
       {openModal && selectedIndex !== null && (
-        <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-mosaico bg-contain">
+        <div className="fixed inset-0 left-0 top-0 z-50 flex items-center justify-center bg-gray-600/90">
           <article className="max-h container grid w-[90%] grid-cols-1 p-4 md:w-[70%] md:grid-cols-[400px_auto]">
             <div className="relative z-10 flex h-auto min-h-[200px] flex-col justify-between rounded-xl bg-black p-8 text-center md:w-[400px]">
               <div className="flex w-full justify-center">
