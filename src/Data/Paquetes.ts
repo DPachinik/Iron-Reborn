@@ -1,8 +1,12 @@
 export type PaqueteTypes = {
   plan: string;
   precio: string;
+  precio2?: string;
+  precio3?: string;
   subtitulo: string;
   cuota: string;
+  cuota2?: string;
+  cuota3?: string;
   item1: string;
   item2?: string;
   item3?: string;
@@ -13,8 +17,12 @@ export type PaqueteTypes = {
 const Paquetes: PaqueteTypes[] = [
   {
     plan: 'Stronger',
-    precio: 'Gs 150.0000',
+    precio: 'Gs 180.000',
+    precio2: 'Gs 115.000',
+    precio3: 'Gs 75.000',
     cuota: '/ mes',
+    cuota2: '/ quincenal',
+    cuota3: '/ semanal',
     subtitulo: 'MUSCULACIÓN',
     item1: 'Acceso libre a sala de musculación',
     item2: 'Uso libre de bicicletas de cardio',
@@ -24,7 +32,7 @@ const Paquetes: PaqueteTypes[] = [
   },
   {
     plan: 'Power',
-    precio: 'Gs 180.000',
+    precio: 'Gs 210.000',
     cuota: '/ mes',
     subtitulo: 'MUSCULACIÓN + CARDIO',
     item1: 'Acceso libre a sala de musculación',

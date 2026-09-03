@@ -60,10 +60,22 @@ const Pack = () => {
                       <p className="text-xl font-semibold">{element.precio}</p>
                       <p className="text-sm">{element.cuota}</p>
                     </div>
+                    <div className="flex items-end gap-2 font-exo">
+                      <p className="text-xl font-semibold">{element.precio2}</p>
+                      <p className="text-sm">{element.cuota2}</p>
+                    </div>
+                    <div className="flex items-end gap-2 font-exo">
+                      <p className="text-xl font-semibold">{element.precio3}</p>
+                      <p className="text-sm">{element.cuota3}</p>
+                    </div>
 
-                    <p className="my-3 w-full border-b-[1px] px-2 pb-1 text-sm font-semibold">
-                      {element.subtitulo}
-                    </p>
+                    <div className="my-3 bg-gradient-to-tl from-black/50 via-transparent to-black/50">
+                      <div className="mr-auto h-[1px] w-[90%] bg-red-600"></div>
+                      <p className="w-full animate-pulse rounded-md py-1 pb-1 text-center text-xs font-semibold text-white">
+                        {element.subtitulo}
+                      </p>
+                      <div className="ml-auto h-[1px] w-[90%] bg-red-600"></div>
+                    </div>
                   </div>
 
                   <ul className="flex flex-col gap-2">
